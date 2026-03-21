@@ -5,30 +5,32 @@ export function Hero() {
   return (
     <section>
       {/* Hero top */}
-      <div className="max-w-6xl mx-auto px-6 pt-20 pb-8 flex flex-col md:flex-row items-center gap-12">
-        <div className="flex-1 flex flex-col gap-4">
-          <p className="tracking-[0.12em] uppercase text-dark-accent font-medium text-[13px]">
-            AI Automation for Business Leaders
-          </p>
-          <h1 className="font-heading text-dark-heading text-4xl md:text-5xl leading-tight">
-            Automate your business so you can lead it
-          </h1>
-        </div>
-        <div className="w-52 h-52 md:w-64 md:h-64 shrink-0 rounded-2xl overflow-hidden relative">
-          <Image
-            src="/images/_MG_9611.jpg"
-            alt="Marc Cornelius"
-            fill
-            className="object-cover"
-            preload
-          />
+      <div className="bg-[#1A1A1A]">
+        <div className="max-w-6xl mx-auto px-12 pt-16 pb-6 flex flex-col md:flex-row items-center gap-12">
+          <div className="flex-1 flex flex-col gap-4">
+            <p className="tracking-[0.12em] uppercase text-dark-accent font-medium text-[13px] leading-4">
+              AI Automation for Business Leaders
+            </p>
+            <h1 className="font-heading text-dark-heading text-4xl md:text-[48px] md:leading-[56px]">
+              Automate your business so you can lead it
+            </h1>
+          </div>
+          <div className="w-52 h-52 md:w-[260px] md:h-[260px] shrink-0 rounded-2xl overflow-hidden relative">
+            <Image
+              src="/images/_MG_9611.jpg"
+              alt="Marc Cornelius"
+              fill
+              className="object-cover object-center"
+              preload
+            />
+          </div>
         </div>
       </div>
 
       {/* Hero body */}
-      <div className="bg-[#2C2418] px-6 py-16">
-        <div className="max-w-6xl mx-auto flex flex-col gap-10">
-          <p className="max-w-xl text-dark-body text-lg leading-7">
+      <div className="bg-[#2C2418]">
+        <div className="max-w-6xl mx-auto px-12 pt-0 pb-16 flex flex-col gap-10">
+          <p className="max-w-[520px] text-dark-body text-lg leading-7">
             I help CEOs and managers build smart automations that save hours
             every week — powered by Claude AI. Less busywork, more focus on what
             matters.
@@ -36,7 +38,7 @@ export function Hero() {
           <div className="flex flex-wrap items-center gap-4">
             <Link
               href="/book-a-call"
-              className="inline-flex items-center justify-center rounded-full py-3.5 px-8 bg-dark-accent text-dark-bg font-semibold text-base transition-opacity hover:opacity-90"
+              className="inline-flex items-center justify-center rounded-full py-3.5 px-8 bg-dark-accent text-[#141414] font-semibold text-base transition-opacity hover:opacity-90"
             >
               Let&apos;s automate together
             </Link>

@@ -18,15 +18,19 @@ const steps = [
 
 export function HowItWorks() {
   return (
-    <section id="how-it-works" className="max-w-6xl mx-auto px-6 py-20">
-      <p className="tracking-[0.12em] uppercase text-dark-accent font-medium text-[13px] text-center">
-        How it works
-      </p>
-      <h2 className="font-heading text-dark-heading text-3xl md:text-[2.5rem] leading-tight text-center mt-4 mb-14">
-        Three steps to a smarter business
-      </h2>
+    <section id="how-it-works" className="border-t border-dark-border">
+      {/* Header */}
+      <div className="max-w-6xl mx-auto px-12 pt-20 pb-12 flex flex-col items-center gap-4">
+        <p className="tracking-[0.12em] uppercase text-dark-accent font-medium text-[13px] text-center">
+          How it works
+        </p>
+        <h2 className="font-heading text-dark-heading text-3xl md:text-[2.5rem] leading-tight text-center">
+          Three steps to a smarter business
+        </h2>
+      </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+      {/* Steps */}
+      <div className="max-w-6xl mx-auto px-12 pb-20 grid grid-cols-1 md:grid-cols-3 gap-5">
         {steps.map((step) => (
           <div key={step.num} className="bg-dark-card rounded-xl p-8 flex flex-col gap-4">
             <span className="font-heading text-dark-border text-5xl leading-none">
