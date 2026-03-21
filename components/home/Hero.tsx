@@ -15,7 +15,7 @@ export function Hero() {
               Automate your business so you can lead it
             </h1>
           </div>
-          <div className="w-52 h-52 md:w-[260px] md:h-[260px] shrink-0 rounded-2xl overflow-hidden relative">
+          <div className="w-64 h-64 md:w-[400px] md:h-[400px] shrink-0 rounded-2xl overflow-hidden relative">
             <Image
               src="/images/_MG_9611.jpg"
               alt="Marc Cornelius"
