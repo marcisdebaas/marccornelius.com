@@ -139,7 +139,9 @@ export default function AboutPage() {
           Join over 1,000+ savvy marketeers who benefit from this FREE
           inspirational newsletter!
         </p>
-        <NewsletterForm variant="full" />
+        <div className="max-w-xl mx-auto bg-dark-card border border-dark-border rounded-2xl p-8">
+          <NewsletterForm variant="full" />
+        </div>
       </section>
     </>
   );
