@@ -39,3 +39,13 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Photos — only track the ones actually used on the site
+public/images/*
+!public/images/_MG_9611.jpg
+!public/images/_MG_9656.jpg
+!public/images/_MG_9599.jpg
+!public/images/_MG_9621.jpg
+!public/images/_MG_9649.jpg
+!public/images/_MG_0044.jpg
+!public/images/_MG_0073.jpg

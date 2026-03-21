@@ -1,0 +1,29 @@
+---
+title: "Stripe to dashboard in 5 minutes: a simple reporting automation"
+date: "February 3, 2026"
+excerpt: "A walkthrough of how I connected Stripe to a live dashboard without writing code — and why it changed how I look at revenue."
+category: "Automation"
+readTime: "4 min read"
+---
+
+A walkthrough of how I connected Stripe to a live dashboard without writing code — and why it changed how I look at revenue.
+
+## The problem
+
+I was logging into Stripe multiple times a day to check on payments, failed charges, and MRR. It's not that Stripe's interface is bad — it's great. But I didn't need all of it. I needed three numbers, and I needed them visible without clicking through menus.
+
+## The setup
+
+I used a simple pipeline: Stripe webhook sends payment events to a lightweight backend, which pushes the data into a Google Sheet. From there, a dashboard tool pulls the numbers and displays them. Total setup time was about five minutes once I knew what I wanted to see. No code. No complex API work. Just connecting dots.
+
+## What the dashboard shows
+
+Three things. Monthly recurring revenue, number of active subscriptions, and failed payment rate. That's it. I don't need charts or trend lines for daily decisions — I need a pulse check. If MRR drops or failed payments spike, I see it immediately without hunting for it.
+
+## Why this matters beyond convenience
+
+Before the dashboard, I was reactive. I'd discover a billing issue when a client emailed. Now I catch it same-day, often before the client even notices. That single change improved retention more than any marketing effort I ran that quarter.
+
+## The bigger lesson
+
+Most reporting automation isn't about building fancy dashboards. It's about surfacing the right numbers in a place you'll actually look. Start with what you check most often, and make it effortless to see.
