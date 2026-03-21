@@ -54,7 +54,7 @@ export default function NewsletterPage() {
       {/* Signup form */}
       <section className="max-w-xl mx-auto px-6 pb-16">
         <div className="bg-dark-card border border-dark-border rounded-2xl p-8">
-          <NewsletterForm />
+          <NewsletterForm variant="full" />
         </div>
       </section>
 

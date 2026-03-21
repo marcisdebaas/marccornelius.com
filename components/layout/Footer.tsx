@@ -1,13 +1,6 @@
 "use client";
 
-import Link from "next/link";
 import { usePathname } from "next/navigation";
-
-const footerLinks = [
-  { href: "/about", label: "About" },
-  { href: "/resources", label: "Resources" },
-  { href: "/book-a-call", label: "Contact" },
-];
 
 export function Footer() {
   const pathname = usePathname();
@@ -32,29 +25,50 @@ export function Footer() {
           </span>
         </div>
 
-        <div className="flex items-center gap-6">
-          {footerLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className={`text-sm transition-colors ${
-                isLight
-                  ? "text-light-body hover:text-light-heading"
-                  : "text-dark-body hover:text-dark-heading"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
-
         <p
           className={`text-sm ${
             isLight ? "text-light-body" : "text-dark-body"
           }`}
         >
-          &copy; {new Date().getFullYear()} marccornelius.com
+          &copy; 2025 Marc Cornelius. All rights reserved.
         </p>
+
+        <div className="flex items-center gap-5">
+          <a
+            href="https://linkedin.com/in/marccornelius"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`text-sm transition-colors ${
+              isLight
+                ? "text-light-body hover:text-light-heading"
+                : "text-dark-body hover:text-dark-heading"
+            }`}
+          >
+            LinkedIn
+          </a>
+          <a
+            href="https://twitter.com/marccornelius"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`text-sm transition-colors ${
+              isLight
+                ? "text-light-body hover:text-light-heading"
+                : "text-dark-body hover:text-dark-heading"
+            }`}
+          >
+            Twitter
+          </a>
+          <a
+            href="mailto:marc@marccornelius.com"
+            className={`text-sm transition-colors ${
+              isLight
+                ? "text-light-body hover:text-light-heading"
+                : "text-dark-body hover:text-dark-heading"
+            }`}
+          >
+            Email
+          </a>
+        </div>
       </div>
     </footer>
   );

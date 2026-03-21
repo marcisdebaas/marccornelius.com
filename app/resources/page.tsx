@@ -149,12 +149,16 @@ export default function ResourcesPage() {
             {cat.title}
           </h2>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+          <div className={`grid grid-cols-1 ${
+            cat.tools.filter((t) => !t.full).length === 3
+              ? "md:grid-cols-3"
+              : "md:grid-cols-2"
+          } gap-5`}>
             {cat.tools.map((tool) => (
               <div
                 key={tool.name}
                 className={`bg-dark-card border border-dark-border rounded-xl p-7 flex flex-col gap-4 ${
-                  tool.full ? "md:col-span-2" : ""
+                  tool.full ? "md:col-span-full" : ""
                 }`}
               >
                 <div className="flex items-center gap-3">

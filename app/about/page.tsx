@@ -139,7 +139,7 @@ export default function AboutPage() {
           Join over 1,000+ savvy marketeers who benefit from this FREE
           inspirational newsletter!
         </p>
-        <NewsletterForm />
+        <NewsletterForm variant="full" />
       </section>
     </>
   );
