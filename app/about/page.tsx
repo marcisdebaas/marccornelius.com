@@ -51,7 +51,12 @@ const timelinePeriods = [
   },
 ];
 
-const tabPeriods = ["2007 – 2009", "2009 – 2016", "2016 – 2023", "NOW"];
+const tabPeriods = [
+  { label: "2007 – 2009", anchor: "period-2007" },
+  { label: "2009 – 2016", anchor: "period-2009" },
+  { label: "2016 – 2023", anchor: "period-2018" },
+  { label: "NOW", anchor: "period-2024" },
+];
 
 export default function AboutPage() {
   return (
@@ -86,19 +91,20 @@ export default function AboutPage() {
       <div className="max-w-6xl mx-auto px-6 py-6">
         <div className="flex justify-between border-t border-dark-accent pt-4">
           {tabPeriods.map((t) => (
-            <span key={t} className="text-dark-heading font-semibold text-sm">
-              {t}
-            </span>
+            <a key={t.anchor} href={`#${t.anchor}`} className="text-dark-heading font-semibold text-sm hover:text-dark-accent transition-colors">
+              {t.label}
+            </a>
           ))}
         </div>
       </div>
 
       {/* Timeline periods */}
       <section className="max-w-6xl mx-auto px-6">
-        {timelinePeriods.map((p) => (
+        {timelinePeriods.map((p, i) => (
           <div
             key={p.period}
-            className={`flex flex-col ${
+            id={tabPeriods[i].anchor}
+            className={`scroll-mt-24 flex flex-col ${
               p.imageRight ? "md:flex-row-reverse" : "md:flex-row"
             } items-start gap-10 py-10`}
           >
