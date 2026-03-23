@@ -98,11 +98,11 @@ function CTAButton() {
     <div className="flex flex-col items-center gap-3">
       <Link
         href="/book-a-call"
-        className="inline-flex items-center justify-center rounded-[10px] py-4.5 px-10 bg-dark-accent text-dark-bg font-inter font-semibold text-base transition-opacity hover:opacity-90"
+        className="inline-flex items-center justify-center rounded-[10px] py-4.5 px-10 bg-dark-accent text-dark-bg font-body font-semibold text-base transition-opacity hover:opacity-90"
       >
         Book Your Business OS
       </Link>
-      <p className="text-[#999] font-inter text-[13px]">
+      <p className="text-[#999] font-body text-[13px]">
         Takes 60 seconds &middot; Money-back guaranteed
       </p>
     </div>
@@ -111,7 +111,7 @@ function CTAButton() {
 
 export default function BusinessOSPage() {
   return (
-    <div className="bg-white text-light-body font-inter">
+    <div className="bg-white text-light-body font-body">
       {/* Hero */}
       <section className="bg-[#F0F0EE]">
         <div className="max-w-6xl mx-auto px-12 pt-16 pb-20 flex flex-col md:flex-row gap-12">
@@ -119,17 +119,17 @@ export default function BusinessOSPage() {
             <p className="tracking-[0.12em] uppercase text-light-accent font-medium text-[13px] leading-4">
               Your Business OS
             </p>
-            <h1 className="font-inter text-light-heading font-bold text-4xl md:text-[48px] md:leading-[56px] tracking-tight mb-4">
+            <h1 className="font-heading text-light-heading font-bold text-4xl md:text-[48px] md:leading-[56px] tracking-tight mb-4">
               Turn Your Business Into a <span className="accent-underline-light">System That Runs Without You</span>
             </h1>
             {/* [CHANGED] Stronger subheadline */}
-            <p className="max-w-[520px] text-light-body font-inter text-[17px] leading-7 mb-8">
+            <p className="max-w-[520px] text-light-body font-body text-[17px] leading-7 mb-8">
               So your business stops depending on you for every decision.
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <CTAButton />
             </div>
-            <p className="text-[#777] font-inter text-sm leading-relaxed max-w-md mt-3">
+            <p className="text-[#777] font-body text-sm leading-relaxed max-w-md mt-3">
               For CEOs and founders doing €5k–€20k/month who are still the
               operational bottleneck.
             </p>
@@ -167,7 +167,7 @@ export default function BusinessOSPage() {
       {/* Problem — [CHANGED] stronger ending */}
       <section className="bg-light-alt py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col gap-7">
-          <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
+          <h2 className="font-heading text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
             Your business works. But it still <span className="accent-underline-light">depends on you</span> for everything.
           </h2>
           <p className="text-light-body text-[17px] leading-7 max-w-2xl">
@@ -207,7 +207,7 @@ export default function BusinessOSPage() {
       {/* Reframe — [CHANGED] sharpened last line */}
       <section className="py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col gap-7">
-          <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
+          <h2 className="font-heading text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
             This is not a team problem
           </h2>
           <p className="text-light-body text-[17px] leading-7 max-w-2xl">
@@ -246,7 +246,7 @@ export default function BusinessOSPage() {
       {/* POV */}
       <section className="bg-light-alt py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col gap-7">
-          <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
+          <h2 className="font-heading text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
             Most businesses don&apos;t have a tool problem
           </h2>
           <p className="text-light-body text-[17px] leading-7 max-w-2xl">
@@ -277,7 +277,7 @@ export default function BusinessOSPage() {
             />
           </div>
           <div className="flex-1 flex flex-col gap-8">
-          <h2 className="text-dark-heading font-bold text-3xl md:text-[40px] leading-tight tracking-tight max-w-2xl">
+          <h2 className="font-heading text-dark-heading font-bold text-3xl md:text-[40px] leading-tight tracking-tight max-w-2xl">
             I don&apos;t ask. I watch.
           </h2>
           <div className="flex flex-col gap-6 max-w-2xl text-dark-body text-lg leading-8">
@@ -326,7 +326,7 @@ export default function BusinessOSPage() {
       <section className="bg-light-alt py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
           <div className="flex-1 flex flex-col gap-7">
-            <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
+            <h2 className="font-heading text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
               What I&apos;m actually looking for
             </h2>
             <p className="text-light-body text-[17px] leading-7 max-w-2xl">
@@ -401,7 +401,7 @@ export default function BusinessOSPage() {
       {/* Automation Examples */}
       <section className="py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col gap-7">
-          <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
+          <h2 className="font-heading text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
             The kinds of things I often map for automation
           </h2>
           <div className="flex flex-wrap gap-3 max-w-2xl">
@@ -444,7 +444,7 @@ export default function BusinessOSPage() {
       {/* Outcomes — [CHANGED] dependency language */}
       <section className="bg-light-alt py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col gap-7">
-          <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
+          <h2 className="font-heading text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
             What you walk away with
           </h2>
           <div className="flex flex-col md:flex-row gap-12">
@@ -482,7 +482,7 @@ export default function BusinessOSPage() {
       <section className="py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
           <div className="flex-1 flex flex-col gap-7">
-          <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
+          <h2 className="font-heading text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
             Why this is worth it
           </h2>
           {/* [NEW] ROI hook */}
@@ -537,7 +537,7 @@ export default function BusinessOSPage() {
       {/* Investment */}
       <section className="bg-light-alt py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col items-center gap-10">
-          <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
+          <h2 className="font-heading text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
             Investment
           </h2>
           {/* [NEW] Clarity line */}
@@ -582,7 +582,7 @@ export default function BusinessOSPage() {
       {/* Guarantee — dark for weight */}
       <section className="py-24 px-6 md:px-16 text-center bg-[#141414]">
         <div className="max-w-3xl mx-auto flex flex-col gap-4">
-          <h2 className="text-dark-heading font-bold text-3xl tracking-tight">
+          <h2 className="font-heading text-dark-heading font-bold text-3xl tracking-tight">
             Zero-risk guarantee
           </h2>
           <p className="text-dark-heading font-semibold text-xl">
@@ -597,7 +597,7 @@ export default function BusinessOSPage() {
       {/* Scarcity — [CHANGED] more urgent */}
       <section className="bg-light-alt py-24 px-6 md:px-16 text-center">
         <div className="max-w-3xl mx-auto flex flex-col gap-5">
-          <h2 className="text-light-heading font-bold text-3xl tracking-tight">
+          <h2 className="font-heading text-light-heading font-bold text-3xl tracking-tight">
             I only take 1 client per week
           </h2>
           <p className="text-[#555] text-[17px] leading-7">
@@ -612,7 +612,7 @@ export default function BusinessOSPage() {
       {/* FAQ */}
       <section className="py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col gap-10">
-          <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
+          <h2 className="font-heading text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
             Frequently asked questions
           </h2>
           <Accordion items={faqItems} />
@@ -622,7 +622,7 @@ export default function BusinessOSPage() {
       {/* Final CTA — [CHANGED] sharpened */}
       <section className="bg-[#111] py-24 px-6 md:px-16 text-center">
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-7">
-          <h2 className="text-dark-heading font-bold text-3xl md:text-[40px] leading-tight tracking-tight max-w-xl">
+          <h2 className="font-heading text-dark-heading font-bold text-3xl md:text-[40px] leading-tight tracking-tight max-w-xl">
             If your business still depends on you, this is the fastest way to fix it.
           </h2>
           <CTAButton />

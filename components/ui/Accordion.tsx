@@ -23,7 +23,7 @@ export function Accordion({ items }: { items: AccordionItem[] }) {
             onClick={() => setOpenIndex(openIndex === i ? null : i)}
             className="w-full flex items-center justify-between text-left gap-4"
           >
-            <span className="text-light-heading font-inter font-semibold text-[17px] leading-6">
+            <span className="text-light-heading font-body font-semibold text-[17px] leading-6">
               {item.question}
             </span>
             <svg
@@ -45,7 +45,7 @@ export function Accordion({ items }: { items: AccordionItem[] }) {
             </svg>
           </button>
           {openIndex === i && (
-            <p className="mt-3 text-[#555] font-inter text-[15px] leading-6 max-w-2xl">
+            <p className="mt-3 text-[#555] font-body text-[15px] leading-6 max-w-2xl">
               {item.answer}
             </p>
           )}
