@@ -1,7 +1,7 @@
 export function WhatIDo() {
   return (
     <section className="border-t border-dark-border">
-      <div className="max-w-3xl mx-auto px-12 py-20">
+      <div className="max-w-6xl mx-auto px-12 py-20">
         <p className="tracking-[0.12em] uppercase text-dark-accent font-medium text-[13px] mb-4">
           What I do
         </p>
