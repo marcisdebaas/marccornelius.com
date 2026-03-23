@@ -46,18 +46,7 @@ export function NewsletterForm({ variant = "inline" }: { variant?: "inline" | "f
           placeholder="Enter your e-mail address"
           className="w-full px-5 py-3.5 rounded-lg bg-dark-card border border-dark-border text-dark-heading text-sm placeholder:text-[#666] focus:outline-none focus:border-dark-accent"
         />
-        <label className="flex items-center gap-3 cursor-pointer">
-          <input
-            type="checkbox"
-            checked={saas}
-            onChange={(e) => setSaas(e.target.checked)}
-            className="w-4 h-4 rounded border-dark-border bg-dark-card accent-dark-accent"
-          />
-          <span className="text-dark-body text-sm">
-            Also send me your FREE SaaS Building Course!
-          </span>
-        </label>
-        <button
+<button
           type="submit"
           disabled={loading}
           className="w-full py-3.5 rounded-lg bg-dark-accent text-dark-bg font-semibold text-base transition-opacity hover:opacity-90 disabled:opacity-50"
