@@ -5,6 +5,7 @@ import { Services } from "@/components/home/Services";
 import { AboutMe } from "@/components/home/AboutMe";
 import { Testimonials } from "@/components/home/Testimonials";
 import { LatestArticles } from "@/components/home/LatestArticles";
+import { NewsletterCTA } from "@/components/home/NewsletterCTA";
 import { CTA } from "@/components/home/CTA";
 import { getAllPosts } from "@/lib/blog";
 
@@ -20,6 +21,7 @@ export default function HomePage() {
       <AboutMe />
       <Testimonials />
       <LatestArticles posts={posts} />
+      <NewsletterCTA />
       <CTA />
     </>
   );

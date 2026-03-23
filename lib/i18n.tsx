@@ -19,58 +19,63 @@ const translations: Record<Locale, Record<string, string>> = {
     "nav.bookACall": "Book a Call",
 
     // Hero
-    "hero.subtitle": "AI Automation for Business Leaders",
-    "hero.title": "Automate your business so you can lead it",
-    "hero.body": "I help CEOs and managers build smart automations that save hours every week — powered by Claude AI. Less busywork, more focus on what matters.",
-    "hero.cta1": "Let's automate together",
+    "hero.subtitle": "Automation for growing businesses",
+    "hero.title": "Your team is great. Your systems aren't.",
+    "hero.body": "I help businesses with 3–25 employees build systems that remove bottlenecks, reduce manual work, and let your team operate without everything going through you.",
+    "hero.cta1": "Let's talk",
     "hero.cta2": "Read more about me",
 
     // What I Do
     "whatido.subtitle": "What I do",
-    "whatido.title": "I help business owners stop doing work a machine should do",
-    "whatido.p1": "Most service businesses are stuck in a loop: more clients means more manual work. More onboarding emails, more reports, more invoices, more follow-ups — all done by hand, every single time.",
-    "whatido.p2a": "I step in, map your day-to-day operations, and actually build the automations — from simple workflows to complex systems. Using Claude AI and tools like Make, Slack, and Google Ads Scripts, I create systems that handle the repetitive work so you can focus on strategy, clients, and growth.",
-    "whatido.p3a": "For larger builds, I work together with my software company",
-    "whatido.p3b": "— where we develop custom tools, integrations, and full automation platforms for businesses that need more than off-the-shelf solutions.",
-    "whatido.result": "The result: 30–50% less manual work. More time. Less chaos.",
+    "whatido.title": "I build the systems your team is missing",
+    "whatido.p1": "Your team is capable. But they're stuck in manual processes, duplicated work, and waiting for decisions that only you can make. That's not a people problem — it's a systems problem.",
+    "whatido.p2a": "I map your operations, find the bottlenecks, and build automations that let your team move faster. From simple workflows to full operational systems — using tools like Make, Slack, and custom integrations.",
+    "whatido.p3a": "For complex builds, I work with my software company",
+    "whatido.p3b": "— where we develop custom tools, integrations, and platforms for businesses that have outgrown spreadsheets and manual processes.",
+    "whatido.result": "The result: your team operates independently, your workload drops 30–50%, and your business stops depending on you for everything.",
 
     // How It Works
     "howitworks.subtitle": "How it works",
-    "howitworks.title": "Three steps to a smarter business",
-    "howitworks.step1.title": "We talk",
-    "howitworks.step1.desc": "I sit down with you to understand your workflows, bottlenecks, and where time disappears.",
+    "howitworks.title": "Three steps to a business that runs itself",
+    "howitworks.step1.title": "We map",
+    "howitworks.step1.desc": "I observe how your team actually works — the handoffs, the bottlenecks, the tasks that eat everyone's time.",
     "howitworks.step2.title": "I build",
-    "howitworks.step2.desc": "I design and set up custom automations using Claude AI — tailored to your team and tools.",
-    "howitworks.step3.title": "You scale",
-    "howitworks.step3.desc": "Your team works faster, you reclaim hours every week, and your business runs on autopilot.",
+    "howitworks.step2.desc": "I design and implement automations tailored to your workflows, your tools, and your team.",
+    "howitworks.step3.title": "Your team scales",
+    "howitworks.step3.desc": "Your people work faster, decisions flow without you, and your business runs with less friction.",
 
     // Services
-    "services.aios.title": "AI OS Setup",
-    "services.aios.desc": "A full AI operating system built around your company. I work with you 1-on-1 to integrate Claude into every layer of your business.",
+    "services.aios.title": "Business OS",
+    "services.aios.desc": "A 1-day deep dive into your operations. I map your workflows, identify bottlenecks, and deliver a clear automation blueprint your team can act on.",
     "services.aios.link": "Learn more",
     "services.automations.title": "Custom Automations",
-    "services.automations.desc": "From content pipelines to reporting workflows — I build automations that save your team hours every single week.",
-    "services.automations.link": "Get your automations",
+    "services.automations.desc": "From client onboarding to reporting to internal handoffs — I build the systems that save your team hours every week.",
+    "services.automations.link": "Get started",
 
     // About Me
     "aboutme.subtitle": "I'm Marc",
     "aboutme.title": "Pleasure to meet you",
-    "aboutme.p1": "Since childhood, I've always sought faster, better methods, cultivating my efficiency. I manage an automation company and hold shares in an affiliate website and a marketing agency.",
-    "aboutme.p2": "Additionally, I co-own a software company focused on automation. Despite the workload, automation makes it all manageable. Does this sound like a dream to you?",
+    "aboutme.p1": "I run an automation consultancy and co-own StickyTooling, a software company that builds custom tools for businesses. I've helped teams across agencies, service businesses, and SaaS companies streamline their operations.",
+    "aboutme.p2": "I believe most businesses don't need more people — they need better systems. I find the manual work your team shouldn't be doing, and I replace it with something that just works.",
     "aboutme.link": "Discover more about my journey",
 
     // Testimonials
     "testimonials.subtitle": "Trusted by business leaders",
-    "testimonials.title": "They automated. You can too.",
+    "testimonials.title": "They systematized. You can too.",
 
     // Latest Articles
     "articles.subtitle": "From the blog",
     "articles.title": "Latest articles",
     "articles.read": "Read",
 
+    // Newsletter
+    "newsletter.subtitle": "Free newsletter",
+    "newsletter.title": "Get Timehacker in your inbox",
+    "newsletter.body": "Weekly automation tips, AI tool reviews, and productivity hacks for business owners. Free, no fluff.",
+
     // CTA
-    "cta.title": "Ready to get your time back?",
-    "cta.body": "Book a free call and let's explore what we can automate in your business — no strings attached.",
+    "cta.title": "Ready to remove yourself as the bottleneck?",
+    "cta.body": "Book a free call and let's look at what's slowing your team down — and what we can fix first.",
     "cta.button": "Book your free call",
 
     // Footer
@@ -84,58 +89,63 @@ const translations: Record<Locale, Record<string, string>> = {
     "nav.bookACall": "Plan een gesprek",
 
     // Hero
-    "hero.subtitle": "AI-automatisering voor ondernemers",
-    "hero.title": "Automatiseer je bedrijf zodat jij kunt ondernemen",
-    "hero.body": "Ik help CEO's en managers slimme automatiseringen bouwen die elke week uren besparen — aangedreven door Claude AI. Minder handwerk, meer focus op wat ertoe doet.",
-    "hero.cta1": "Laten we automatiseren",
+    "hero.subtitle": "Automatisering voor groeiende bedrijven",
+    "hero.title": "Je team is goed. Je systemen niet.",
+    "hero.body": "Ik help bedrijven met 3–25 medewerkers systemen bouwen die knelpunten wegnemen, handmatig werk verminderen en je team laten werken zonder dat alles via jou hoeft te lopen.",
+    "hero.cta1": "Laten we praten",
     "hero.cta2": "Meer over mij",
 
     // What I Do
     "whatido.subtitle": "Wat ik doe",
-    "whatido.title": "Ik help ondernemers stoppen met werk dat een machine hoort te doen",
-    "whatido.p1": "De meeste dienstverlenende bedrijven zitten vast in een lus: meer klanten betekent meer handmatig werk. Meer onboarding-mails, meer rapporten, meer facturen, meer opvolgingen — allemaal met de hand, elke keer opnieuw.",
-    "whatido.p2a": "Ik stap in, breng je dagelijkse werkzaamheden in kaart, en bouw de automatiseringen — van simpele workflows tot complexe systemen. Met Claude AI en tools als Make, Slack en Google Ads Scripts maak ik systemen die het repetitieve werk overnemen, zodat jij je kunt richten op strategie, klanten en groei.",
-    "whatido.p3a": "Voor grotere projecten werk ik samen met mijn softwarebedrijf",
-    "whatido.p3b": "— waar we op maat gemaakte tools, integraties en volledige automatiseringsplatformen ontwikkelen voor bedrijven die meer nodig hebben dan standaardoplossingen.",
-    "whatido.result": "Het resultaat: 30–50% minder handmatig werk. Meer tijd. Minder chaos.",
+    "whatido.title": "Ik bouw de systemen die je team mist",
+    "whatido.p1": "Je team is capabel. Maar ze zitten vast in handmatige processen, dubbel werk en wachten op beslissingen die alleen jij kunt nemen. Dat is geen mensenprobleem — dat is een systeemprobleem.",
+    "whatido.p2a": "Ik breng je werkprocessen in kaart, vind de knelpunten en bouw automatiseringen waarmee je team sneller kan werken. Van simpele workflows tot complete systemen — met tools als Make, Slack en maatwerk integraties.",
+    "whatido.p3a": "Voor complexe projecten werk ik samen met mijn softwarebedrijf",
+    "whatido.p3b": "— waar we op maat gemaakte tools, integraties en platformen bouwen voor bedrijven die spreadsheets en handmatige processen ontgroeid zijn.",
+    "whatido.result": "Het resultaat: je team werkt zelfstandig, je werkdruk daalt 30–50% en je bedrijf stopt met alles van jou te laten afhangen.",
 
     // How It Works
     "howitworks.subtitle": "Hoe het werkt",
-    "howitworks.title": "Drie stappen naar een slimmer bedrijf",
-    "howitworks.step1.title": "We praten",
-    "howitworks.step1.desc": "Ik ga met je zitten om je workflows, knelpunten en tijdverspilling te begrijpen.",
+    "howitworks.title": "Drie stappen naar een bedrijf dat zichzelf draait",
+    "howitworks.step1.title": "We brengen in kaart",
+    "howitworks.step1.desc": "Ik observeer hoe je team echt werkt — de overdrachten, de knelpunten, de taken die ieders tijd opeten.",
     "howitworks.step2.title": "Ik bouw",
-    "howitworks.step2.desc": "Ik ontwerp en bouw automatiseringen op maat met Claude AI — afgestemd op jouw team en tools.",
-    "howitworks.step3.title": "Jij schaalt",
-    "howitworks.step3.desc": "Je team werkt sneller, je wint uren per week terug en je bedrijf draait op automatische piloot.",
+    "howitworks.step2.desc": "Ik ontwerp en implementeer automatiseringen op maat voor je workflows, tools en team.",
+    "howitworks.step3.title": "Je team schaalt",
+    "howitworks.step3.desc": "Je mensen werken sneller, beslissingen lopen zonder jou en je bedrijf draait met minder wrijving.",
 
     // Services
-    "services.aios.title": "AI OS Setup",
-    "services.aios.desc": "Een compleet AI-besturingssysteem rondom jouw bedrijf. Ik werk 1-op-1 met je om Claude in elke laag van je bedrijf te integreren.",
+    "services.aios.title": "Business OS",
+    "services.aios.desc": "Een 1-dag deep dive in je bedrijfsvoering. Ik breng je workflows in kaart, vind knelpunten en lever een helder automatiseringsplan waar je team mee aan de slag kan.",
     "services.aios.link": "Meer info",
     "services.automations.title": "Maatwerk Automatiseringen",
-    "services.automations.desc": "Van contentpipelines tot rapportage-workflows — ik bouw automatiseringen die je team elke week uren besparen.",
-    "services.automations.link": "Automatiseer nu",
+    "services.automations.desc": "Van klant-onboarding tot rapportages tot interne overdrachten — ik bouw de systemen die je team elke week uren besparen.",
+    "services.automations.link": "Aan de slag",
 
     // About Me
     "aboutme.subtitle": "Ik ben Marc",
     "aboutme.title": "Aangenaam kennis te maken",
-    "aboutme.p1": "Sinds mijn jeugd zoek ik altijd naar snellere, betere methodes. Ik run een automatiseringsbedrijf en heb aandelen in een affiliate website en een marketingbureau.",
-    "aboutme.p2": "Daarnaast ben ik mede-eigenaar van een softwarebedrijf gericht op automatisering. Ondanks de werkdruk maakt automatisering alles beheersbaar. Klinkt dat als een droom?",
+    "aboutme.p1": "Ik run een automatiseringsbureau en ben mede-eigenaar van StickyTooling, een softwarebedrijf dat maatwerk tools bouwt. Ik heb teams bij bureaus, dienstverleners en SaaS-bedrijven geholpen hun werkprocessen te stroomlijnen.",
+    "aboutme.p2": "Ik geloof dat de meeste bedrijven geen extra mensen nodig hebben — ze hebben betere systemen nodig. Ik vind het handmatige werk dat je team niet zou moeten doen en vervang het door iets dat gewoon werkt.",
     "aboutme.link": "Ontdek meer over mijn reis",
 
     // Testimonials
     "testimonials.subtitle": "Vertrouwd door ondernemers",
-    "testimonials.title": "Zij automatiseerden. Jij ook.",
+    "testimonials.title": "Zij systematiseerden. Jij ook.",
 
     // Latest Articles
     "articles.subtitle": "Van de blog",
     "articles.title": "Laatste artikelen",
     "articles.read": "Lees",
 
+    // Newsletter
+    "newsletter.subtitle": "Gratis nieuwsbrief",
+    "newsletter.title": "Ontvang Timehacker in je inbox",
+    "newsletter.body": "Wekelijkse automatiseringstips, AI-tool reviews en productiviteitshacks voor ondernemers. Gratis, geen onzin.",
+
     // CTA
-    "cta.title": "Klaar om je tijd terug te winnen?",
-    "cta.body": "Plan een gratis gesprek en laten we verkennen wat we kunnen automatiseren in jouw bedrijf — vrijblijvend.",
+    "cta.title": "Klaar om jezelf als bottleneck te verwijderen?",
+    "cta.body": "Plan een gratis gesprek en laten we kijken wat je team vertraagt — en wat we als eerste kunnen oplossen.",
     "cta.button": "Plan je gratis gesprek",
 
     // Footer
