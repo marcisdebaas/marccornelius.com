@@ -7,7 +7,7 @@ export function Hero() {
       <div className="max-w-6xl mx-auto px-12 pt-16 pb-20">
         {/* Top: heading + image */}
         <div className="flex flex-col md:flex-row items-center gap-12 mb-12">
-          <div className="flex-1 flex flex-col gap-4">
+          <div className="flex-1 flex flex-col gap-2">
             <p className="tracking-[0.12em] uppercase text-dark-accent font-medium text-[13px] leading-4">
               AI Automation for Business Leaders
             </p>
@@ -26,8 +26,8 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Body: description + buttons */}
-        <p className="max-w-[520px] text-dark-body text-lg leading-7 mb-10">
+        {/* Body */}
+        <p className="max-w-[520px] text-dark-body text-lg leading-7 mb-8">
           I help CEOs and managers build smart automations that save hours
           every week — powered by Claude AI. Less busywork, more focus on what
           matters.
