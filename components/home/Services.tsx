@@ -5,20 +5,21 @@ import Image from "next/image";
 import { useI18n } from "@/lib/i18n";
 
 export function Services() {
-  const { t } = useI18n();
+  const { locale, t } = useI18n();
+  const lp = `/${locale}`;
 
   const services = [
     {
       title: t("services.aios.title"),
       desc: t("services.aios.desc"),
-      link: "/business-os",
+      link: `${lp}/business-os`,
       linkText: t("services.aios.link"),
       image: "/images/_MG_9599.jpg",
     },
     {
       title: t("services.automations.title"),
       desc: t("services.automations.desc"),
-      link: "/book-a-call",
+      link: `${lp}/book-a-call`,
       linkText: t("services.automations.link"),
       image: "/images/_MG_0073.jpg",
     },

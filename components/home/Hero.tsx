@@ -5,7 +5,8 @@ import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
 
 export function Hero() {
-  const { t } = useI18n();
+  const { locale, t } = useI18n();
+  const lp = `/${locale}`;
 
   return (
     <section className="bg-[#1A1A1A]">
@@ -23,13 +24,13 @@ export function Hero() {
           </p>
           <div className="flex flex-wrap items-center gap-4">
             <Link
-              href="/book-a-call"
+              href={`${lp}/book-a-call`}
               className="inline-flex items-center justify-center rounded-full py-3.5 px-8 bg-dark-accent text-[#141414] font-semibold text-base transition-opacity hover:opacity-90"
             >
               {t("hero.cta1")}
             </Link>
             <Link
-              href="/about"
+              href={`${lp}/about`}
               className="inline-flex items-center justify-center rounded-full py-3.5 px-8 border border-dark-heading text-dark-heading font-medium text-base transition-colors hover:bg-dark-heading/10"
             >
               {t("hero.cta2")}

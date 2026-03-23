@@ -3,20 +3,31 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useI18n } from "@/lib/i18n";
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
-  const isLight = pathname === "/business-os";
-  const { locale, setLocale, t } = useI18n();
+  const router = useRouter();
+  const { locale, t } = useI18n();
+  const isLight = pathname.includes("/business-os");
+
+  // Build locale-prefixed hrefs
+  const lp = `/${locale}`;
 
   const navLinks = [
-    { href: "/about", label: t("nav.about") },
-    { href: "/business-os", label: t("nav.aiOsSetup") },
-    { href: "/resources", label: t("nav.resources") },
+    { href: `${lp}/about`, label: t("nav.about") },
+    { href: `${lp}/business-os`, label: t("nav.aiOsSetup") },
+    { href: `${lp}/resources`, label: t("nav.resources") },
   ];
+
+  function switchLocale() {
+    const newLocale = locale === "en" ? "nl" : "en";
+    // Replace /en/ or /nl/ prefix with new locale
+    const newPath = pathname.replace(/^\/(en|nl)/, `/${newLocale}`);
+    router.push(newPath);
+  }
 
   return (
     <nav
@@ -28,7 +39,7 @@ export function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href="/" className="flex items-center">
+        <Link href={lp} className="flex items-center">
           <Image
             src="/images/logo.png"
             alt="Marc Cornelius"
@@ -60,7 +71,7 @@ export function Navbar() {
 
           {/* Language toggle */}
           <button
-            onClick={() => setLocale(locale === "en" ? "nl" : "en")}
+            onClick={switchLocale}
             className="text-sm px-3 py-1.5 rounded-full border border-transparent hover:border-dark-border transition-colors"
             title={locale === "en" ? "Switch to Dutch" : "Switch to English"}
           >
@@ -86,7 +97,7 @@ export function Navbar() {
           </button>
 
           <Link
-            href="/book-a-call"
+            href={`${lp}/book-a-call`}
             className={`text-sm px-5 py-2 rounded-full border transition-colors ${
               isLight
                 ? "border-light-accent text-light-accent hover:bg-light-accent hover:text-white"
@@ -143,7 +154,7 @@ export function Navbar() {
               </Link>
             ))}
             <button
-              onClick={() => setLocale(locale === "en" ? "nl" : "en")}
+              onClick={() => { switchLocale(); setMobileOpen(false); }}
               className={`text-sm text-left flex items-center gap-2 ${
                 isLight ? "text-light-body" : "text-dark-body"
               }`}
@@ -161,7 +172,7 @@ export function Navbar() {
               )}
             </button>
             <Link
-              href="/book-a-call"
+              href={`${lp}/book-a-call`}
               onClick={() => setMobileOpen(false)}
               className={`text-sm px-5 py-2 rounded-full border text-center ${
                 isLight

@@ -145,19 +145,11 @@ const translations: Record<Locale, Record<string, string>> = {
 
 const I18nContext = createContext<I18nContextType | undefined>(undefined);
 
-export function I18nProvider({ children }: { children: ReactNode }) {
-  const [locale, setLocaleState] = useState<Locale>("en");
+export function I18nProvider({ children, initialLocale = "en" }: { children: ReactNode; initialLocale?: Locale }) {
+  const locale = initialLocale;
 
-  useEffect(() => {
-    const saved = localStorage.getItem("locale") as Locale;
-    if (saved === "en" || saved === "nl") {
-      setLocaleState(saved);
-    }
-  }, []);
-
-  const setLocale = (newLocale: Locale) => {
-    setLocaleState(newLocale);
-    localStorage.setItem("locale", newLocale);
+  const setLocale = (_newLocale: Locale) => {
+    // Navigation-based — handled by Navbar via router.push
   };
 
   const t = (key: string) => {

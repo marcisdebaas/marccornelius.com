@@ -13,7 +13,8 @@ interface Post {
 }
 
 export function LatestArticles({ posts }: { posts: Post[] }) {
-  const { t } = useI18n();
+  const { locale, t } = useI18n();
+  const lp = `/${locale}`;
 
   return (
     <section className="max-w-6xl mx-auto px-12 py-20">
@@ -28,7 +29,7 @@ export function LatestArticles({ posts }: { posts: Post[] }) {
         {posts.map((post) => (
           <Link
             key={post.slug}
-            href={`/blog/${post.slug}`}
+            href={`${lp}/blog/${post.slug}`}
             className="bg-dark-card border border-dark-border rounded-xl overflow-hidden flex flex-col group hover:border-dark-accent/30 transition-colors"
           >
             {post.image && (
