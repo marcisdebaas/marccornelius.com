@@ -20,6 +20,7 @@ export function Navbar() {
     { href: `${lp}/about`, label: t("nav.about") },
     { href: `${lp}/business-os`, label: t("nav.aiOsSetup") },
     { href: `${lp}/resources`, label: t("nav.resources") },
+    { href: `${lp}/newsletter`, label: t("nav.newsletter") },
   ];
 
   function switchLocale() {

@@ -16,6 +16,7 @@ const translations: Record<Locale, Record<string, string>> = {
     "nav.about": "About",
     "nav.aiOsSetup": "AI OS Setup",
     "nav.resources": "Resources",
+    "nav.newsletter": "Newsletter",
     "nav.bookACall": "Book a Call",
 
     // Hero
@@ -86,6 +87,7 @@ const translations: Record<Locale, Record<string, string>> = {
     "nav.about": "Over mij",
     "nav.aiOsSetup": "AI OS Setup",
     "nav.resources": "Tools",
+    "nav.newsletter": "Nieuwsbrief",
     "nav.bookACall": "Plan een gesprek",
 
     // Hero
