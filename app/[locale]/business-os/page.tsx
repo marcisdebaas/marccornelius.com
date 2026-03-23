@@ -566,53 +566,79 @@ export default function BusinessOSPage() {
       </section>
 
       {/* Investment */}
-      <section className="py-24 px-6 md:px-16">
-        <div className="max-w-5xl mx-auto flex flex-col items-center gap-10">
-          <h2 className="font-heading text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
-            Investment
-          </h2>
-          <div className="flex flex-col items-center rounded-xl py-6 px-8 gap-2 bg-[#F0FAF5] border border-[#D1F0E2]">
-            <p className="text-light-heading font-semibold text-xl text-center">
-              Most clients free up 12–20 hours per week.
-            </p>
-            <p className="text-light-accent font-medium text-[17px] text-center">
-              That&apos;s 2–3 full days back.
+      <section className="py-28 px-6 md:px-16 bg-[#0A0A0A]">
+        <div className="max-w-5xl mx-auto flex flex-col items-center gap-12">
+          <div className="text-center flex flex-col gap-4">
+            <h2 className="font-heading text-dark-heading font-bold text-3xl md:text-[40px] leading-tight tracking-tight">
+              Investment
+            </h2>
+            <p className="text-dark-body font-medium text-lg max-w-lg mx-auto">
+              This is not about saving a few hours.
+              <br />
+              This is about <span className="accent-underline">removing yourself as the bottleneck</span>.
             </p>
           </div>
-          <p className="text-light-heading font-medium text-lg text-center max-w-lg">
-            This is not about saving a few hours.
-            <br />
-            This is about <span className="accent-underline-light">removing yourself as the bottleneck</span>.
-          </p>
 
-          <div className="w-full max-w-lg bg-white border border-[#E5E5E5] rounded-2xl p-12 flex flex-col gap-8">
-            <div className="flex flex-col gap-2">
-              <p className="tracking-[0.04em] uppercase text-light-accent font-semibold text-[15px]">
-                Your Business OS
+          {/* Pricing card */}
+          <div className="w-full max-w-lg bg-[#141414] border border-[#2A2A2A] rounded-2xl overflow-hidden">
+            {/* ROI banner */}
+            <div className="bg-dark-accent/10 border-b border-[#2A2A2A] py-5 px-10 text-center">
+              <p className="text-dark-heading font-semibold text-lg">
+                Most clients free up 12–20 hours per week.
               </p>
-              <p className="text-light-heading font-bold text-5xl tracking-tight">
-                €2.250
+              <p className="text-dark-accent font-medium text-base mt-1">
+                That&apos;s 2–3 full days back.
               </p>
-              <p className="text-[#777] text-[15px]">One-time investment</p>
             </div>
-            <div className="flex flex-col gap-3.5">
-              {pricingFeatures.map((f) => (
-                <p key={f} className="text-light-body text-[15px] leading-6">
-                  ✓ {f}
+
+            {/* Card body */}
+            <div className="p-10 md:p-12 flex flex-col gap-8">
+              <div className="flex flex-col gap-2">
+                <p className="tracking-[0.06em] uppercase text-dark-accent font-semibold text-sm">
+                  Your Business OS
                 </p>
-              ))}
+                <p className="text-dark-heading font-bold text-5xl md:text-6xl tracking-tight">
+                  €2.250
+                </p>
+                <p className="text-[#666] text-[15px]">One-time investment</p>
+              </div>
+
+              <div className="w-full h-px bg-[#2A2A2A]" />
+
+              <div className="flex flex-col gap-4">
+                {pricingFeatures.map((f) => (
+                  <div key={f} className="flex items-center gap-3">
+                    <svg viewBox="0 0 20 20" className="w-5 h-5 shrink-0" fill="none">
+                      <circle cx="10" cy="10" r="10" fill="#34D399" fillOpacity="0.15" />
+                      <path d="M6 10l3 3 5-5" stroke="#34D399" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                    </svg>
+                    <p className="text-dark-body text-base leading-6">
+                      {f}
+                    </p>
+                  </div>
+                ))}
+              </div>
+
+              <div className="w-full h-px bg-[#2A2A2A]" />
+
+              <div className="flex flex-col gap-3">
+                <div className="flex items-start gap-3">
+                  <span className="text-dark-accent text-sm mt-0.5">+</span>
+                  <p className="text-dark-heading font-medium text-[15px] leading-6">
+                    50% credited toward implementation if you continue with
+                    StickyTooling.
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <span className="text-dark-accent text-sm mt-0.5">+</span>
+                  <p className="text-[#666] text-sm leading-relaxed">
+                    For many Dutch businesses, up to 60% subsidy may apply.
+                  </p>
+                </div>
+              </div>
+
+              <CTAButton />
             </div>
-            <div className="w-full h-px bg-[#E5E5E5]" />
-            <div className="flex flex-col gap-2.5">
-              <p className="text-light-heading font-medium text-[15px] leading-6">
-                50% credited toward implementation if you continue with
-                StickyTooling.
-              </p>
-              <p className="text-[#777] text-sm leading-relaxed">
-                For many Dutch businesses, up to 60% subsidy may apply.
-              </p>
-            </div>
-            <CTAButton />
           </div>
         </div>
       </section>
