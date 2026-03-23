@@ -63,6 +63,43 @@ const SkillsIcon = () => (
   </svg>
 );
 
+const PenIcon = () => (
+  <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="#34D399" strokeWidth="2">
+    <path d="M12 20h9" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
+const ChartIcon = () => (
+  <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="#34D399" strokeWidth="2">
+    <line x1="18" y1="20" x2="18" y2="10" strokeLinecap="round" strokeLinejoin="round"/>
+    <line x1="12" y1="20" x2="12" y2="4" strokeLinecap="round" strokeLinejoin="round"/>
+    <line x1="6" y1="20" x2="6" y2="14" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
+const ShieldIcon = () => (
+  <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="#34D399" strokeWidth="2">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
+const FileTextIcon = () => (
+  <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="#34D399" strokeWidth="2">
+    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" strokeLinecap="round" strokeLinejoin="round"/>
+    <polyline points="14 2 14 8 20 8" strokeLinecap="round" strokeLinejoin="round"/>
+    <line x1="16" y1="13" x2="8" y2="13" strokeLinecap="round" strokeLinejoin="round"/>
+    <line x1="16" y1="17" x2="8" y2="17" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
+const BriefcaseIcon = () => (
+  <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="#34D399" strokeWidth="2">
+    <rect x="2" y="7" width="20" height="14" rx="2" ry="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" strokeLinecap="round" strokeLinejoin="round"/>
+  </svg>
+);
+
 const CoworkIcon = () => (
   <svg viewBox="0 0 24 24" className="w-5 h-5" fill="none" stroke="#D4A574" strokeWidth="2">
     <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" strokeLinecap="round" strokeLinejoin="round"/>
@@ -160,6 +197,37 @@ const categories: { label: string; title: string; tools: Tool[] }[] = [
         desc: "The backend framework that powers Sticky Tooling's custom software. Elegant, powerful, and battle-tested for building APIs and full-stack applications.",
         link: "laravel.com",
         url: "https://laravel.com",
+      },
+    ],
+  },
+  {
+    label: "My Claude Skills",
+    title: "Custom AI skills I built",
+    tools: [
+      {
+        name: "LinkedIn Writer",
+        icon: <PenIcon />,
+        desc: "Generates LinkedIn posts in my personal tone of voice. Follows a proven structure for engagement — hook, story, insight, CTA. One prompt, one polished post.",
+      },
+      {
+        name: "Google Ads Report",
+        icon: <ChartIcon />,
+        desc: "Pulls campaign performance data via the API and generates a positive, actionable report with month-over-month comparison, keyword insights, and a plan for next month.",
+      },
+      {
+        name: "Repo Security Audit",
+        icon: <ShieldIcon />,
+        desc: "Runs a full security audit on any codebase — code review, severity scan, performance review, and architecture check. Outputs findings as a structured report.",
+      },
+      {
+        name: "SLA Generator",
+        icon: <FileTextIcon />,
+        desc: "Creates professional Service Level Agreements for StickyTooling clients. Fills in all the legal and technical details from a simple brief.",
+      },
+      {
+        name: "Business Context Gatherer",
+        icon: <BriefcaseIcon />,
+        desc: "Conducts a structured interview to map a client's business model, unit economics, goals, and competitive landscape. Creates a full context document for future reference.",
       },
     ],
   },
