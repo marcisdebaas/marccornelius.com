@@ -3,10 +3,10 @@ import Link from "next/link";
 
 export function Hero() {
   return (
-    <section>
-      {/* Hero top */}
-      <div className="bg-[#1A1A1A]">
-        <div className="max-w-6xl mx-auto px-12 pt-16 pb-6 flex flex-col md:flex-row items-center gap-12">
+    <section className="bg-[#1A1A1A]">
+      <div className="max-w-6xl mx-auto px-12 pt-16 pb-20">
+        {/* Top: heading + image */}
+        <div className="flex flex-col md:flex-row items-center gap-12 mb-12">
           <div className="flex-1 flex flex-col gap-4">
             <p className="tracking-[0.12em] uppercase text-dark-accent font-medium text-[13px] leading-4">
               AI Automation for Business Leaders
@@ -25,30 +25,26 @@ export function Hero() {
             />
           </div>
         </div>
-      </div>
 
-      {/* Hero body */}
-      <div className="bg-[#2C2418]">
-        <div className="max-w-6xl mx-auto px-12 pt-0 pb-16 flex flex-col gap-10">
-          <p className="max-w-[520px] text-dark-body text-lg leading-7">
-            I help CEOs and managers build smart automations that save hours
-            every week — powered by Claude AI. Less busywork, more focus on what
-            matters.
-          </p>
-          <div className="flex flex-wrap items-center gap-4">
-            <Link
-              href="/book-a-call"
-              className="inline-flex items-center justify-center rounded-full py-3.5 px-8 bg-dark-accent text-[#141414] font-semibold text-base transition-opacity hover:opacity-90"
-            >
-              Let&apos;s automate together
-            </Link>
-            <Link
-              href="#how-it-works"
-              className="inline-flex items-center justify-center rounded-full py-3.5 px-8 border border-dark-heading text-dark-heading font-medium text-base transition-colors hover:bg-dark-heading/10"
-            >
-              See how it works
-            </Link>
-          </div>
+        {/* Body: description + buttons */}
+        <p className="max-w-[520px] text-dark-body text-lg leading-7 mb-10">
+          I help CEOs and managers build smart automations that save hours
+          every week — powered by Claude AI. Less busywork, more focus on what
+          matters.
+        </p>
+        <div className="flex flex-wrap items-center gap-4">
+          <Link
+            href="/book-a-call"
+            className="inline-flex items-center justify-center rounded-full py-3.5 px-8 bg-dark-accent text-[#141414] font-semibold text-base transition-opacity hover:opacity-90"
+          >
+            Let&apos;s automate together
+          </Link>
+          <Link
+            href="#how-it-works"
+            className="inline-flex items-center justify-center rounded-full py-3.5 px-8 border border-dark-heading text-dark-heading font-medium text-base transition-colors hover:bg-dark-heading/10"
+          >
+            See how it works
+          </Link>
         </div>
       </div>
     </section>
