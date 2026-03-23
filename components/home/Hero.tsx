@@ -6,7 +6,7 @@ export function Hero() {
     <section className="bg-[#1A1A1A]">
       <div className="max-w-6xl mx-auto px-12 pt-16 pb-20">
         {/* Top: heading + image */}
-        <div className="flex flex-col md:flex-row items-center gap-12 mb-12">
+        <div className="flex flex-col md:flex-row items-center gap-12 mb-4">
           <div className="flex-1 flex flex-col gap-2">
             <p className="tracking-[0.12em] uppercase text-dark-accent font-medium text-[13px] leading-4">
               AI Automation for Business Leaders
