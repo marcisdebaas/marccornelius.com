@@ -21,22 +21,15 @@ const testimonials = [
 
 export function Testimonials() {
   return (
-    <section>
-      {/* Header */}
-      <div className="bg-[#1A1A1A] pt-16 pb-6 px-12">
-        <div className="max-w-6xl mx-auto flex flex-col items-center gap-4">
-          <p className="tracking-[0.12em] uppercase text-dark-accent font-medium text-[13px] text-center">
-            Trusted by business leaders
-          </p>
-          <h2 className="font-heading text-dark-heading text-3xl md:text-[2.5rem] leading-tight text-center">
-            They automated. You can too.
-          </h2>
-        </div>
-      </div>
+    <section className="max-w-6xl mx-auto px-12 py-16">
+      <p className="tracking-[0.12em] uppercase text-dark-accent font-medium text-[13px] text-center">
+        Trusted by business leaders
+      </p>
+      <h2 className="font-heading text-dark-heading text-3xl md:text-[2.5rem] leading-tight text-center mt-4 mb-14">
+        They automated. You can too.
+      </h2>
 
-      {/* Cards on warm background */}
-      <div className="bg-[#EDE7DC] pb-16 px-12">
-        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {testimonials.map((t) => (
             <div
               key={t.name}
@@ -53,7 +46,6 @@ export function Testimonials() {
               </div>
             </div>
           ))}
-        </div>
       </div>
     </section>
   );
