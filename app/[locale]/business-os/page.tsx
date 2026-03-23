@@ -305,10 +305,10 @@ export default function BusinessOSPage() {
         </div>
       </section>
 
-      {/* Shadowing */}
-      <section className="py-28 px-6 md:px-16 bg-[#141414]">
-        <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
-          <div className="w-full md:w-64 h-80 shrink-0 rounded-2xl overflow-hidden relative md:sticky md:top-24">
+      {/* Shadowing — the shift moment */}
+      <section className="py-36 px-6 md:px-16 bg-[#0A0A0A]">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-16">
+          <div className="w-full md:w-72 h-96 shrink-0 rounded-2xl overflow-hidden relative md:sticky md:top-24">
             <Image
               src="/images/_MG_9649.jpg"
               alt="Marc observing workflows"
@@ -316,34 +316,34 @@ export default function BusinessOSPage() {
               className="object-cover"
             />
           </div>
-          <div className="flex-1 flex flex-col gap-8">
-            <h2 className="font-heading text-dark-heading font-bold text-3xl md:text-[40px] leading-tight tracking-tight max-w-2xl">
+          <div className="flex-1 flex flex-col gap-10">
+            <h2 className="font-heading text-dark-heading font-bold text-4xl md:text-[48px] md:leading-[56px] tracking-tight max-w-2xl">
               I don&apos;t ask. I watch.
             </h2>
-            <div className="flex flex-col gap-6 max-w-2xl text-dark-body text-lg leading-8">
+            <div className="flex flex-col gap-7 max-w-2xl text-dark-body text-xl leading-9">
               <p>Most people will ask how your business works.</p>
               <p>You&apos;ll explain it.</p>
               <p>And it will sound structured.</p>
-              <p className="text-dark-heading font-semibold text-lg">
+              <p className="text-dark-heading font-semibold text-xl">
                 But that&apos;s not how it <span className="accent-underline">actually runs</span>.
               </p>
               <p>So I don&apos;t start with questions.</p>
               <p>I sit with you and your team.</p>
-              <p className="text-dark-heading font-medium text-lg">
+              <p className="text-dark-heading font-semibold text-xl">
                 I watch how work <span className="accent-underline">actually happens</span>.
               </p>
             </div>
-            <div className="flex flex-col gap-3 max-w-2xl mt-2">
-              <p className="text-[#777] text-base leading-relaxed">What gets copied.</p>
-              <p className="text-[#777] text-base leading-relaxed">What gets repeated.</p>
-              <p className="text-[#777] text-base leading-relaxed">Where things break.</p>
-              <p className="text-[#777] text-base leading-relaxed">Where people get stuck.</p>
+            <div className="flex flex-col gap-4 max-w-2xl mt-4">
+              <p className="text-[#666] text-lg leading-relaxed">What gets copied.</p>
+              <p className="text-[#666] text-lg leading-relaxed">What gets repeated.</p>
+              <p className="text-[#666] text-lg leading-relaxed">Where things break.</p>
+              <p className="text-[#666] text-lg leading-relaxed">Where people get stuck.</p>
             </div>
-            <p className="text-dark-accent font-semibold text-lg leading-7 max-w-2xl mt-2">
-              That&apos;s where the <span className="accent-underline">real opportunities</span> are.
+            <p className="text-dark-accent font-bold text-xl leading-7 max-w-2xl mt-4">
+              That&apos;s where the <span className="accent-underline">real leverage</span> is.
             </p>
-            <div className="border-t border-dark-border mt-6 pt-8 max-w-2xl">
-              <p className="text-dark-heading font-medium text-xl md:text-2xl leading-relaxed">
+            <div className="border-t border-[#222] mt-8 pt-10 max-w-2xl">
+              <p className="text-dark-heading font-medium text-2xl md:text-3xl leading-relaxed tracking-tight">
                 Most problems don&apos;t show up in reports.
                 <br />
                 They show up in how work actually happens.
@@ -555,6 +555,14 @@ export default function BusinessOSPage() {
           <h2 className="font-heading text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
             Investment
           </h2>
+          <div className="flex flex-col items-center rounded-xl py-6 px-8 gap-2 bg-[#F0FAF5] border border-[#D1F0E2]">
+            <p className="text-light-heading font-semibold text-xl text-center">
+              Most clients free up 12–20 hours per week.
+            </p>
+            <p className="text-light-accent font-medium text-[17px] text-center">
+              That&apos;s 2–3 full days back.
+            </p>
+          </div>
           <p className="text-light-heading font-medium text-lg text-center max-w-lg">
             This is not about saving a few hours.
             <br />
