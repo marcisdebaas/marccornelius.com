@@ -120,7 +120,7 @@ export default function BusinessOSPage() {
               Your Business OS
             </p>
             <h1 className="font-inter text-light-heading font-bold text-4xl md:text-[48px] md:leading-[56px] tracking-tight mb-4">
-              Turn Your Business Into a System That Runs Without You
+              Turn Your Business Into a <span className="accent-underline-light">System That Runs Without You</span>
             </h1>
             {/* [CHANGED] Stronger subheadline */}
             <p className="max-w-[520px] text-light-body font-inter text-[17px] leading-7 mb-8">
@@ -152,7 +152,7 @@ export default function BusinessOSPage() {
           <p className="text-dark-body font-medium text-xl md:text-2xl leading-relaxed max-w-2xl">
             Your team doesn&apos;t need more tools.
             <br />
-            They need a system they can run without you.
+            They need a system they can run <span className="accent-underline">without you</span>.
           </p>
         </div>
         <div className="max-w-5xl mx-auto">
@@ -168,7 +168,7 @@ export default function BusinessOSPage() {
       <section className="bg-light-alt py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col gap-7">
           <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
-            Your business works. But it still depends on you for everything.
+            Your business works. But it still <span className="accent-underline-light">depends on you</span> for everything.
           </h2>
           <p className="text-light-body text-[17px] leading-7 max-w-2xl">
             You&apos;ve built something real. Clients are coming in. Revenue is
@@ -195,7 +195,7 @@ export default function BusinessOSPage() {
               but you&apos;re not actually getting ahead.
             </p>
             <p className="text-light-heading font-bold text-xl md:text-2xl leading-9 mt-6">
-              Everything still depends on you.
+              <span className="accent-underline-light">Everything still depends on you.</span>
             </p>
             <p className="text-light-heading font-bold text-xl md:text-2xl leading-9 mt-6">
               And if you stop working, everything slows down.
@@ -211,10 +211,10 @@ export default function BusinessOSPage() {
             This is not a team problem
           </h2>
           <p className="text-light-body text-[17px] leading-7 max-w-2xl">
-            It&apos;s a system problem.
+            It&apos;s a <span className="accent-underline-light">system problem</span>.
           </p>
           <p className="text-light-heading font-medium text-[17px] leading-7 max-w-2xl">
-            Once the structure is clear, your team stops needing you for everything.
+            Once the structure is clear, your team <span className="accent-underline-light">stops needing you</span> for everything.
           </p>
         </div>
       </section>
@@ -253,7 +253,7 @@ export default function BusinessOSPage() {
             Most businesses already have enough tools.
           </p>
           <p className="text-light-body text-[17px] leading-7 max-w-2xl">
-            What they&apos;re missing is clarity on how their work actually flows.
+            What they&apos;re missing is clarity on how their work <span className="accent-underline-light">actually flows</span>.
           </p>
           <p className="text-light-body text-[17px] leading-7 max-w-2xl">
             Without that, automation just creates more complexity.
@@ -285,12 +285,12 @@ export default function BusinessOSPage() {
             <p>You&apos;ll explain it.</p>
             <p>And it will sound structured.</p>
             <p className="text-dark-heading font-semibold text-lg">
-              But that&apos;s not how it actually runs.
+              But that&apos;s not how it <span className="accent-underline">actually runs</span>.
             </p>
             <p>So I don&apos;t start with questions.</p>
             <p>I sit with you and your team.</p>
             <p className="text-dark-heading font-medium text-lg">
-              I watch how work actually happens.
+              I watch how work <span className="accent-underline">actually happens</span>.
             </p>
           </div>
           <div className="flex flex-col gap-3 max-w-2xl mt-2">
@@ -308,7 +308,7 @@ export default function BusinessOSPage() {
             </p>
           </div>
           <p className="text-dark-accent font-semibold text-lg leading-7 max-w-2xl mt-2">
-            That&apos;s where the real leverage is.
+            That&apos;s where the <span className="accent-underline">real leverage</span> is.
           </p>
           {/* Micro-insight */}
           <div className="border-t border-dark-border mt-6 pt-8 max-w-2xl">
@@ -342,7 +342,7 @@ export default function BusinessOSPage() {
             ))}
           </div>
           <p className="text-light-heading font-medium text-[17px] leading-7 max-w-2xl">
-            Once you see these patterns, the system becomes obvious.
+            Once you see these patterns, the system becomes <span className="accent-underline-light">obvious</span>.
           </p>
         </div>
       </section>
@@ -396,12 +396,33 @@ export default function BusinessOSPage() {
           <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
             What you walk away with
           </h2>
-          <div className="flex flex-col gap-3.5 max-w-2xl">
-            {outcomes.map((item) => (
-              <p key={item} className="text-light-body text-base leading-relaxed">
-                ✓ {item}
-              </p>
-            ))}
+          <div className="flex flex-col md:flex-row gap-12">
+            <div className="flex flex-col gap-3.5 flex-1">
+              {outcomes.map((item) => (
+                <p key={item} className="text-light-body text-base leading-relaxed">
+                  ✓ {item}
+                </p>
+              ))}
+            </div>
+
+            {/* Blueprint mockup placeholder */}
+            <div className="w-full md:w-80 h-64 md:h-auto shrink-0 rounded-2xl overflow-hidden relative bg-white border border-[#E5E5E5] flex items-center justify-center">
+              <div className="flex flex-col items-center gap-3 p-6 text-center">
+                <svg viewBox="0 0 24 24" className="w-10 h-10" fill="none" stroke="#1B5E3B" strokeWidth="1.5">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" strokeLinecap="round" strokeLinejoin="round"/>
+                  <polyline points="14 2 14 8 20 8" strokeLinecap="round" strokeLinejoin="round"/>
+                  <line x1="16" y1="13" x2="8" y2="13" strokeLinecap="round" strokeLinejoin="round"/>
+                  <line x1="16" y1="17" x2="8" y2="17" strokeLinecap="round" strokeLinejoin="round"/>
+                  <polyline points="10 9 9 9 8 9" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+                <p className="text-light-heading font-semibold text-sm">
+                  Your Business OS Blueprint
+                </p>
+                <p className="text-[#999] text-xs leading-relaxed">
+                  A custom automation blueprint tailored to your business — ready to act on.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -447,7 +468,7 @@ export default function BusinessOSPage() {
           </p>
           <p className="text-light-heading font-medium text-[17px] max-w-2xl">
             You&apos;re redesigning how your business operates. That&apos;s the
-            real shift.
+            <span className="accent-underline-light"> real shift</span>.
           </p>
           </div>
           {/* Photo */}
@@ -472,7 +493,7 @@ export default function BusinessOSPage() {
           <p className="text-light-heading font-medium text-lg text-center max-w-lg">
             This is not about saving a few hours.
             <br />
-            This is about removing yourself as the bottleneck.
+            This is about <span className="accent-underline-light">removing yourself as the bottleneck</span>.
           </p>
 
           <div className="w-full max-w-lg bg-white border border-[#E5E5E5] rounded-2xl p-12 flex flex-col gap-8">

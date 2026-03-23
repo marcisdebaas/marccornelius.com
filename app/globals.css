@@ -39,3 +39,18 @@ html {
   background-color: #34D399;
   color: #141414;
 }
+
+/* Subtle accent underline for key words */
+.accent-underline {
+  text-decoration: underline;
+  text-decoration-color: #34D399;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
+
+.accent-underline-light {
+  text-decoration: underline;
+  text-decoration-color: #1B5E3B;
+  text-underline-offset: 4px;
+  text-decoration-thickness: 2px;
+}
