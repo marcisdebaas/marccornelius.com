@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 export function Footer() {
@@ -15,15 +16,13 @@ export function Footer() {
       }`}
     >
       <div className="max-w-6xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div className="flex items-center gap-1">
-          <span
-            className={`text-lg font-bold ${
-              isLight ? "text-light-heading" : "text-dark-heading"
-            }`}
-          >
-            MC
-          </span>
-        </div>
+        <Image
+          src="/images/logo.png"
+          alt="Marc Cornelius"
+          width={48}
+          height={24}
+          className={isLight ? "invert" : ""}
+        />
 
         <p
           className={`text-sm ${

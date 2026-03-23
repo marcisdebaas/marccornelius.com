@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 
 const navLinks = [
@@ -25,14 +26,14 @@ export function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-1">
-          <span
-            className={`text-xl font-bold tracking-tight ${
-              isLight ? "text-light-heading" : "text-dark-heading"
-            }`}
-          >
-            MC
-          </span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/images/logo.png"
+            alt="Marc Cornelius"
+            width={48}
+            height={24}
+            className={isLight ? "invert" : ""}
+          />
         </Link>
 
         {/* Desktop nav */}
