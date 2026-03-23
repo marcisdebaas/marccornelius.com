@@ -33,7 +33,7 @@ export function HowItWorks() {
       <div className="max-w-6xl mx-auto px-12 pb-20 grid grid-cols-1 md:grid-cols-3 gap-5">
         {steps.map((step) => (
           <div key={step.num} className="bg-dark-card rounded-xl p-8 flex flex-col gap-4">
-            <span className="font-heading text-dark-border text-5xl leading-none">
+            <span className="font-heading text-[#3A3A3A] text-5xl leading-none">
               {step.num}
             </span>
             <h3 className="text-dark-heading font-semibold text-[17px]">
