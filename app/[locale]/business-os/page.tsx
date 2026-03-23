@@ -208,54 +208,55 @@ export default function BusinessOSPage() {
         </div>
       </section>
 
-      {/* Team Pain */}
+      {/* Team Pain + Reframe — side by side */}
       <section className="py-24 px-6 md:px-16">
-        <div className="max-w-5xl mx-auto flex flex-col gap-7">
-          <h2 className="font-heading text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
-            Why your team is <span className="accent-underline-light">always busy</span>
-          </h2>
-          <p className="text-light-body text-[17px] leading-7 max-w-2xl">
-            Your team isn&apos;t slow.
-          </p>
-          <p className="text-light-heading font-medium text-[17px] leading-7 max-w-2xl">
-            They&apos;re working inside a broken structure.
-          </p>
-          <div className="flex flex-col gap-2 max-w-2xl mt-2">
-            {teamPains.map((p) => (
-              <p key={p} className="text-[#555] text-base leading-relaxed">
-                {p}
-              </p>
-            ))}
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-16">
+          {/* Left: Team Pain */}
+          <div className="flex-1 flex flex-col gap-6">
+            <h2 className="font-heading text-light-heading font-bold text-3xl md:text-[2rem] leading-tight tracking-tight">
+              Why your team is <span className="accent-underline-light">always busy</span>
+            </h2>
+            <p className="text-light-body text-[17px] leading-7">
+              Your team isn&apos;t slow.
+            </p>
+            <p className="text-light-heading font-medium text-[17px] leading-7">
+              They&apos;re working inside a broken structure.
+            </p>
+            <div className="flex flex-col gap-2 mt-1">
+              {teamPains.map((p) => (
+                <p key={p} className="text-[#555] text-base leading-relaxed">
+                  {p}
+                </p>
+              ))}
+            </div>
+            <p className="text-light-body text-[17px] leading-7">
+              That&apos;s what fills their day.
+            </p>
+            <p className="text-light-heading font-medium text-[17px] leading-7">
+              And because of that, everything comes back to you.
+            </p>
           </div>
-          <p className="text-light-body text-[17px] leading-7 max-w-2xl">
-            That&apos;s what fills their day.
-          </p>
-          <p className="text-light-heading font-medium text-[17px] leading-7 max-w-2xl">
-            And because of that, everything comes back to you.
-          </p>
-        </div>
-      </section>
 
-      {/* Reframe */}
-      <section className="bg-light-alt py-24 px-6 md:px-16">
-        <div className="max-w-5xl mx-auto flex flex-col gap-7">
-          <h2 className="font-heading text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
-            This is not a team problem
-          </h2>
-          <p className="text-light-body text-[17px] leading-7 max-w-2xl">
-            It&apos;s a <span className="accent-underline-light">system problem</span>.
-          </p>
-          <p className="text-light-body text-[17px] leading-7 max-w-2xl">
-            Once the structure is clear:
-          </p>
-          <div className="flex flex-col gap-2 max-w-2xl">
-            <p className="text-[#555] text-base leading-relaxed">Repetitive work disappears</p>
-            <p className="text-[#555] text-base leading-relaxed">Processes speed up</p>
-            <p className="text-[#555] text-base leading-relaxed">Errors drop</p>
+          {/* Right: Reframe */}
+          <div className="flex-1 flex flex-col gap-6 md:border-l md:border-[#E0E0E0] md:pl-16">
+            <h2 className="font-heading text-light-heading font-bold text-3xl md:text-[2rem] leading-tight tracking-tight">
+              This is not a team problem
+            </h2>
+            <p className="text-light-body text-[17px] leading-7">
+              It&apos;s a <span className="accent-underline-light">system problem</span>.
+            </p>
+            <p className="text-light-body text-[17px] leading-7">
+              Once the structure is clear:
+            </p>
+            <div className="flex flex-col gap-2">
+              <p className="text-[#555] text-base leading-relaxed">Repetitive work disappears</p>
+              <p className="text-[#555] text-base leading-relaxed">Processes speed up</p>
+              <p className="text-[#555] text-base leading-relaxed">Errors drop</p>
+            </div>
+            <p className="text-light-heading font-medium text-[17px] leading-7">
+              And your team <span className="accent-underline-light">stops needing you</span> for everything.
+            </p>
           </div>
-          <p className="text-light-heading font-medium text-[17px] leading-7 max-w-2xl">
-            And your team <span className="accent-underline-light">stops needing you</span> for everything.
-          </p>
         </div>
       </section>
 
