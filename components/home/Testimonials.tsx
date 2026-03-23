@@ -33,7 +33,7 @@ export function Testimonials() {
           {testimonials.map((t) => (
             <div
               key={t.name}
-              className="bg-dark-card border border-dark-border rounded-xl p-7 flex flex-col gap-4"
+              className="bg-dark-card border border-dark-border rounded-xl p-7 flex flex-col gap-4 hover:border-dark-accent/30 transition-colors"
             >
               <p className="text-dark-body italic text-sm leading-relaxed">
                 &ldquo;{t.quote}&rdquo;

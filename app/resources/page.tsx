@@ -157,7 +157,7 @@ export default function ResourcesPage() {
             {cat.tools.map((tool) => (
               <div
                 key={tool.name}
-                className={`bg-dark-card border border-dark-border rounded-xl p-7 flex flex-col gap-4 ${
+                className={`bg-dark-card border border-dark-border hover:border-dark-accent/30 transition-colors rounded-xl p-7 flex flex-col gap-4 ${
                   tool.full ? "md:col-span-full" : ""
                 }`}
               >
@@ -179,7 +179,7 @@ export default function ResourcesPage() {
                     href={tool.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-dark-accent font-semibold text-sm"
+                    className="text-dark-accent font-semibold text-sm hover:opacity-80 transition-opacity"
                   >
                     {tool.link} &rarr;
                   </a>

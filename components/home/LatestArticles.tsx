@@ -18,7 +18,7 @@ export function LatestArticles() {
           <Link
             key={post.slug}
             href={`/blog/${post.slug}`}
-            className="bg-dark-card border border-dark-border rounded-xl p-7 flex flex-col gap-3 group"
+            className="bg-dark-card border border-dark-border rounded-xl p-7 flex flex-col gap-3 group hover:border-dark-accent/30 transition-colors"
           >
             <p className="text-[#666] text-sm">{post.date}</p>
             <h3 className="font-heading text-dark-heading text-lg leading-snug group-hover:text-dark-accent transition-colors">

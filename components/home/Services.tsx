@@ -22,7 +22,7 @@ export function Services() {
         {services.map((service) => (
           <div
             key={service.title}
-            className="bg-dark-card rounded-2xl p-8 flex flex-col gap-5"
+            className="bg-dark-card rounded-2xl p-8 flex flex-col gap-5 hover:border-dark-accent/30 border border-transparent transition-colors"
           >
             <h3 className="font-heading text-dark-heading text-[22px] leading-7">
               {service.title}
@@ -32,7 +32,7 @@ export function Services() {
             </p>
             <Link
               href={service.link}
-              className="text-dark-accent font-semibold text-sm"
+              className="text-dark-accent font-semibold text-sm hover:opacity-80 transition-opacity"
             >
               {service.linkText} &rarr;
             </Link>
@@ -40,7 +40,7 @@ export function Services() {
         ))}
       </div>
 
-      <div className="mt-5 bg-dark-card border border-dark-border rounded-2xl p-8 flex flex-col gap-4">
+      <div className="mt-5 bg-dark-card border border-dark-border rounded-2xl p-8 flex flex-col gap-4 hover:border-dark-accent/30 transition-colors">
         <h3 className="font-heading text-dark-heading text-[22px] leading-7">
           Consulting &amp; Training
         </h3>
@@ -50,7 +50,7 @@ export function Services() {
         </p>
         <Link
           href="/book-a-call"
-          className="text-dark-accent font-semibold text-sm"
+          className="text-dark-accent font-semibold text-sm hover:opacity-80 transition-opacity"
         >
           Book a session &rarr;
         </Link>

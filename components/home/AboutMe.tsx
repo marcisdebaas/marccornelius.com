@@ -16,7 +16,7 @@ export function AboutMe() {
         </div>
 
         {/* Text card overlapping image */}
-        <div className="relative md:-ml-16 mt-[-60px] md:mt-auto md:self-end bg-dark-card rounded-2xl border border-dark-border p-10 flex-1 z-20">
+        <div className="relative md:-ml-16 mt-[-60px] md:mt-auto md:self-end bg-dark-card rounded-2xl border border-dark-border hover:border-dark-accent/30 transition-colors p-10 flex-1 z-20">
           <p className="tracking-[0.12em] uppercase text-dark-accent font-semibold text-[13px] mb-2">
             I&apos;m Marc
           </p>
