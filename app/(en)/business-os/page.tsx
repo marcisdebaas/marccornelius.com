@@ -6,7 +6,7 @@ import { Accordion } from "@/components/ui/Accordion";
 export const metadata: Metadata = {
   title: "Business OS — Turn Your Business Into a System",
   description:
-    "I map out exactly how your business actually operates, so your team can execute without everything going through you.",
+    "So your business stops depending on you for every decision.",
 };
 
 const painPoints = [
@@ -46,11 +46,11 @@ const automationTags = [
 ];
 
 const outcomes = [
-  "Your team operates without constant input from you",
-  "Fewer interruptions throughout your day",
+  "Your team knows what to do without asking you",
+  "Fewer interruptions during the day",
   "Less decision fatigue",
-  "Clear, documented workflows",
-  "Reduced dependency on any single person",
+  "Clear workflows across your business",
+  "Less dependency on you as the owner",
   "30–50% workload reduction in the short term",
 ];
 
@@ -119,12 +119,12 @@ export default function BusinessOSPage() {
             <p className="tracking-[0.12em] uppercase text-light-accent font-medium text-[13px] leading-4">
               Your Business OS
             </p>
-            <h1 className="font-inter text-light-heading font-bold text-4xl md:text-[48px] md:leading-[56px] tracking-tight mb-6">
+            <h1 className="font-inter text-light-heading font-bold text-4xl md:text-[48px] md:leading-[56px] tracking-tight mb-4">
               Turn Your Business Into a System That Runs Without You
             </h1>
+            {/* [CHANGED] Stronger subheadline */}
             <p className="max-w-[520px] text-light-body font-inter text-[17px] leading-7 mb-8">
-              I map out exactly how your business actually operates, so your team
-              can execute without everything going through you.
+              So your business stops depending on you for every decision.
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <CTAButton />
@@ -146,18 +146,29 @@ export default function BusinessOSPage() {
         </div>
       </section>
 
-      {/* Signature line */}
-      <section className="py-16 px-6 md:px-16">
+      {/* [CHANGED] Strong line after hero */}
+      <section className="py-12 px-6 md:px-16 border-b border-[#E8E8E8]">
         <div className="max-w-5xl mx-auto">
-          <blockquote className="border-l-[3px] border-light-accent pl-6">
-            <p className="text-light-heading font-bold text-2xl md:text-3xl leading-snug tracking-tight italic">
+          <p className="text-light-heading font-semibold text-xl md:text-2xl leading-relaxed max-w-2xl">
+            Your team doesn&apos;t need more tools.
+            <br />
+            They need a system they can run without you.
+          </p>
+        </div>
+      </section>
+
+      {/* [CHANGED] Signature line — larger, more space, divider */}
+      <section className="py-20 px-6 md:px-16">
+        <div className="max-w-5xl mx-auto">
+          <blockquote className="border-l-4 border-light-accent pl-8">
+            <p className="text-light-heading font-bold text-3xl md:text-[36px] leading-snug tracking-tight italic">
               &ldquo;If everything depends on you, you don&apos;t have a system.&rdquo;
             </p>
           </blockquote>
         </div>
       </section>
 
-      {/* Problem */}
+      {/* Problem — [CHANGED] stronger ending */}
       <section className="bg-light-alt py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col gap-7">
           <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
@@ -180,23 +191,24 @@ export default function BusinessOSPage() {
               </p>
             ))}
           </div>
-          <div className="max-w-2xl">
-            <p className="text-light-heading font-semibold text-xl leading-8">
+          {/* [CHANGED] Visually stronger ending */}
+          <div className="max-w-2xl mt-4 pt-8 border-t border-[#E0E0E0]">
+            <p className="text-light-heading font-bold text-xl md:text-2xl leading-9">
               You&apos;re busy all day…
               <br />
               but you&apos;re not actually getting ahead.
             </p>
-            <p className="text-light-heading font-semibold text-xl leading-8 mt-6">
+            <p className="text-light-heading font-bold text-xl md:text-2xl leading-9 mt-6">
               Everything still depends on you.
             </p>
-            <p className="text-light-heading font-semibold text-xl leading-8 mt-6">
+            <p className="text-light-heading font-bold text-xl md:text-2xl leading-9 mt-6">
               And if you stop working, everything slows down.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Reframe */}
+      {/* Reframe — [CHANGED] sharpened last line */}
       <section className="py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col gap-7">
           <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
@@ -206,8 +218,7 @@ export default function BusinessOSPage() {
             It&apos;s a system problem.
           </p>
           <p className="text-light-heading font-medium text-[17px] leading-7 max-w-2xl">
-            Once the structure is clear, your team doesn&apos;t need you for
-            everything.
+            Once the structure is clear, your team stops needing you for everything.
           </p>
         </div>
       </section>
@@ -233,44 +244,58 @@ export default function BusinessOSPage() {
         </div>
       </section>
 
-      {/* Shadowing */}
-      <section className="py-24 px-6 md:px-16">
-        <div className="max-w-5xl mx-auto flex flex-col gap-7">
-          <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
+      {/* Shadowing — [CHANGED] larger text, more spacing, stronger ending */}
+      <section className="py-28 px-6 md:px-16 bg-[#FAFAF8]">
+        <div className="max-w-5xl mx-auto flex flex-col gap-8">
+          <h2 className="text-light-heading font-bold text-3xl md:text-[40px] leading-tight tracking-tight max-w-2xl">
             I don&apos;t ask. I watch.
           </h2>
-          <div className="flex flex-col gap-5 max-w-2xl text-light-body text-[17px] leading-7">
+          <div className="flex flex-col gap-6 max-w-2xl text-light-body text-lg leading-8">
             <p>Most people will ask how your business works.</p>
             <p>You&apos;ll explain it.</p>
             <p>And it will sound structured.</p>
-            <p className="text-light-heading font-medium">
+            <p className="text-light-heading font-semibold text-lg">
               But that&apos;s not how it actually runs.
             </p>
             <p>So I don&apos;t start with questions.</p>
             <p>I sit with you and your team.</p>
-            <p>I watch how work actually happens.</p>
+            <p className="text-light-heading font-medium text-lg">
+              I watch how work actually happens.
+            </p>
           </div>
-          <div className="flex flex-col gap-2 max-w-2xl">
-            <p className="text-[#555] text-base leading-relaxed">
+          <div className="flex flex-col gap-3 max-w-2xl mt-2">
+            <p className="text-[#444] text-base leading-relaxed">
               What gets copied.
             </p>
-            <p className="text-[#555] text-base leading-relaxed">
+            <p className="text-[#444] text-base leading-relaxed">
               What gets repeated.
             </p>
-            <p className="text-[#555] text-base leading-relaxed">
+            <p className="text-[#444] text-base leading-relaxed">
               Where things break.
             </p>
-            <p className="text-[#555] text-base leading-relaxed">
+            <p className="text-[#444] text-base leading-relaxed">
               Where people get stuck.
             </p>
           </div>
-          <p className="text-light-heading font-medium text-[17px] leading-7 max-w-2xl">
-            That&apos;s where the real opportunities are.
+          {/* [CHANGED] Stronger closing */}
+          <p className="text-light-heading font-semibold text-lg leading-7 max-w-2xl mt-2">
+            That&apos;s where the real leverage is.
           </p>
         </div>
       </section>
 
-      {/* What I Look For */}
+      {/* [NEW] Micro-insight */}
+      <section className="py-16 px-6 md:px-16">
+        <div className="max-w-5xl mx-auto">
+          <p className="text-light-heading font-medium text-xl md:text-2xl leading-relaxed max-w-2xl">
+            Most problems don&apos;t show up in reports.
+            <br />
+            They show up in how work actually happens.
+          </p>
+        </div>
+      </section>
+
+      {/* What I Look For — [CHANGED] sharpened ending */}
       <section className="bg-light-alt py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col gap-7">
           <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
@@ -290,7 +315,7 @@ export default function BusinessOSPage() {
             ))}
           </div>
           <p className="text-light-heading font-medium text-[17px] leading-7 max-w-2xl">
-            Once you see those patterns, the system becomes obvious.
+            Once you see these patterns, the system becomes obvious.
           </p>
         </div>
       </section>
@@ -317,7 +342,7 @@ export default function BusinessOSPage() {
         </div>
       </section>
 
-      {/* Outcomes */}
+      {/* Outcomes — [CHANGED] dependency language */}
       <section className="bg-light-alt py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col gap-7">
           <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
@@ -333,12 +358,21 @@ export default function BusinessOSPage() {
         </div>
       </section>
 
-      {/* Why Worth It */}
+      {/* Why Worth It — [CHANGED] ROI hook at top */}
       <section className="py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col gap-7">
           <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
             Why this is worth it
           </h2>
+          {/* [NEW] ROI hook */}
+          <div className="flex flex-col items-start rounded-xl py-5 px-7 gap-1 bg-[#F0FAF5] border border-[#D1F0E2] max-w-md">
+            <p className="text-light-heading font-semibold text-lg">
+              Most clients free up 12–20 hours per week.
+            </p>
+            <p className="text-light-accent font-medium text-base">
+              That&apos;s 2–3 full days back.
+            </p>
+          </div>
           <p className="text-light-body text-[17px] leading-7 max-w-2xl">
             If you free up 30–50% of your workload, that is not just &ldquo;a
             little more efficient.&rdquo; That is not just &ldquo;a little more
@@ -369,20 +403,18 @@ export default function BusinessOSPage() {
         </div>
       </section>
 
-      {/* Investment */}
+      {/* Investment — [CHANGED] clarity line added */}
       <section className="bg-light-alt py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col items-center gap-10">
           <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
             Investment
           </h2>
-          <div className="flex flex-col items-center rounded-xl py-6 px-8 gap-2 bg-[#F0FAF5] border border-[#D1F0E2]">
-            <p className="text-light-heading font-semibold text-xl text-center">
-              Most clients free up 12–20 hours per week.
-            </p>
-            <p className="text-light-accent font-medium text-[17px] text-center">
-              That&apos;s 2–3 full days back.
-            </p>
-          </div>
+          {/* [NEW] Clarity line */}
+          <p className="text-light-heading font-medium text-lg text-center max-w-lg">
+            This is not about saving a few hours.
+            <br />
+            This is about removing yourself as the bottleneck.
+          </p>
 
           <div className="w-full max-w-lg bg-white border border-[#E5E5E5] rounded-2xl p-12 flex flex-col gap-8">
             <div className="flex flex-col gap-2">
@@ -416,13 +448,13 @@ export default function BusinessOSPage() {
         </div>
       </section>
 
-      {/* Guarantee */}
-      <section className="py-24 px-6 md:px-16 text-center">
+      {/* Guarantee — [CHANGED] higher contrast bg */}
+      <section className="py-24 px-6 md:px-16 text-center bg-[#FAFAF8]">
         <div className="max-w-3xl mx-auto flex flex-col gap-4">
           <h2 className="text-light-heading font-bold text-3xl tracking-tight">
             Zero-risk guarantee
           </h2>
-          <p className="text-light-heading font-medium text-lg">
+          <p className="text-light-heading font-semibold text-xl">
             If this isn&apos;t valuable, I&apos;ll refund you.
           </p>
           <p className="text-[#555] text-base leading-relaxed">
@@ -431,13 +463,16 @@ export default function BusinessOSPage() {
         </div>
       </section>
 
-      {/* Scarcity */}
+      {/* Scarcity — [CHANGED] more urgent */}
       <section className="bg-light-alt py-24 px-6 md:px-16 text-center">
-        <div className="max-w-3xl mx-auto flex flex-col gap-4">
+        <div className="max-w-3xl mx-auto flex flex-col gap-5">
           <h2 className="text-light-heading font-bold text-3xl tracking-tight">
             I only take 1 client per week
           </h2>
-          <p className="text-light-heading font-medium text-base mt-2">
+          <p className="text-[#555] text-[17px] leading-7">
+            That&apos;s 4 per month.
+          </p>
+          <p className="text-light-heading font-semibold text-base">
             Once it&apos;s booked, it&apos;s gone.
           </p>
         </div>
@@ -453,7 +488,7 @@ export default function BusinessOSPage() {
         </div>
       </section>
 
-      {/* Final CTA */}
+      {/* Final CTA — [CHANGED] sharpened */}
       <section className="bg-[#111] py-24 px-6 md:px-16 text-center">
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-7">
           <h2 className="text-dark-heading font-bold text-3xl md:text-[40px] leading-tight tracking-tight max-w-xl">
