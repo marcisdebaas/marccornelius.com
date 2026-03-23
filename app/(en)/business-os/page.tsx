@@ -4,9 +4,9 @@ import Link from "next/link";
 import { Accordion } from "@/components/ui/Accordion";
 
 export const metadata: Metadata = {
-  title: "Business OS — Cut 30–50% of Your Workload in 1 Day",
+  title: "Business OS — Turn Your Business Into a System",
   description:
-    "I map out exactly what to automate in your business, so you stop drowning in client work and finally get your time back.",
+    "I map out exactly how your business actually operates, so your team can execute without everything going through you.",
 };
 
 const painPoints = [
@@ -22,32 +22,12 @@ const painPoints = [
   "constantly switching between tools just to keep things moving",
 ];
 
-const sessionSteps = [
-  {
-    title: "Your current workflow",
-    desc: "What happens from lead to delivery to support",
-  },
-  {
-    title: "Your biggest time drains",
-    desc: "Where you lose time, energy, and focus every week",
-  },
-  {
-    title: "Where you can remove the most work immediately",
-    desc: "What can be automated first for the fastest, highest-impact wins",
-  },
-  {
-    title: "Your exact plan to remove yourself from the busywork",
-    desc: "A written blueprint showing exactly what to automate, in what order, and how",
-  },
-];
-
-const outcomes = [
-  "A custom Business OS mapped to your business",
-  "A clear overview of your biggest automation opportunities",
-  "A prioritized roadmap of what to automate first",
-  "Specific recommendations for workflows, tools, and structure",
-  "A plan to reduce 30–50% of your workload in the short term",
-  "Clarity on what to keep, what to remove, and what to delegate to systems",
+const lookingFor = [
+  "where data moves manually",
+  "where decisions depend on you",
+  "where people wait for input",
+  "where work gets duplicated",
+  "where things only work because someone remembers",
 ];
 
 const automationTags = [
@@ -65,11 +45,19 @@ const automationTags = [
   "Marketing materials",
 ];
 
+const outcomes = [
+  "Your team operates without constant input from you",
+  "Fewer interruptions throughout your day",
+  "Less decision fatigue",
+  "Clear, documented workflows",
+  "Reduced dependency on any single person",
+  "30–50% workload reduction in the short term",
+];
+
 const pricingFeatures = [
-  "1-day Business OS mapping session",
+  "1-day Business OS session",
   "Full written automation blueprint",
-  "Prioritized action plan",
-  "Custom recommendations for your workflow",
+  "Prioritized roadmap",
 ];
 
 const faqItems = [
@@ -127,28 +115,26 @@ export default function BusinessOSPage() {
       {/* Hero */}
       <section className="bg-[#F0F0EE]">
         <div className="max-w-6xl mx-auto px-12 pt-16 pb-20 flex flex-col md:flex-row gap-12">
-          {/* Left column: heading + body */}
           <div className="flex-1 flex flex-col gap-2">
             <p className="tracking-[0.12em] uppercase text-light-accent font-medium text-[13px] leading-4">
-              AI OS Setup
+              Your Business OS
             </p>
             <h1 className="font-inter text-light-heading font-bold text-4xl md:text-[48px] md:leading-[56px] tracking-tight mb-6">
-              Cut 30–50% of Your Workload in 1 Day
+              Turn Your Business Into a System That Runs Without You
             </h1>
             <p className="max-w-[520px] text-light-body font-inter text-[17px] leading-7 mb-8">
-              I map out exactly what to automate in your business, so you stop
-              drowning in client work and finally get your time back.
+              I map out exactly how your business actually operates, so your team
+              can execute without everything going through you.
             </p>
             <div className="flex flex-wrap items-center gap-4">
               <CTAButton />
             </div>
             <p className="text-[#777] font-inter text-sm leading-relaxed max-w-md mt-3">
-              For service businesses doing €5k–€20k/month that are stuck in
-              client work and want more time, more structure, and less chaos.
+              For CEOs and founders doing €5k–€20k/month who are still the
+              operational bottleneck.
             </p>
           </div>
 
-          {/* Right column: image */}
           <div className="w-64 h-64 md:w-[400px] md:h-[400px] shrink-0 rounded-2xl overflow-hidden relative self-start">
             <Image
               src="/images/_MG_9611.jpg"
@@ -157,6 +143,17 @@ export default function BusinessOSPage() {
               className="object-cover"
             />
           </div>
+        </div>
+      </section>
+
+      {/* Signature line */}
+      <section className="py-16 px-6 md:px-16">
+        <div className="max-w-5xl mx-auto">
+          <blockquote className="border-l-[3px] border-light-accent pl-6">
+            <p className="text-light-heading font-bold text-2xl md:text-3xl leading-snug tracking-tight italic">
+              &ldquo;If everything depends on you, you don&apos;t have a system.&rdquo;
+            </p>
+          </blockquote>
         </div>
       </section>
 
@@ -203,121 +200,97 @@ export default function BusinessOSPage() {
       <section className="py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col gap-7">
           <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
-            You do not need more clients. You need a Business OS.
+            This is not a team problem
           </h2>
           <p className="text-light-body text-[17px] leading-7 max-w-2xl">
-            Most service businesses do not have a client problem. They have a
-            systems problem.
+            It&apos;s a system problem.
           </p>
-          <blockquote className="max-w-2xl pl-5 border-l-[3px] border-light-accent">
-            <p className="text-light-heading font-semibold text-[19px] leading-7">
-              More clients won&apos;t fix this.
-              <br />
-              They will make it worse.
+          <p className="text-light-heading font-medium text-[17px] leading-7 max-w-2xl">
+            Once the structure is clear, your team doesn&apos;t need you for
+            everything.
+          </p>
+        </div>
+      </section>
+
+      {/* POV */}
+      <section className="bg-light-alt py-24 px-6 md:px-16">
+        <div className="max-w-5xl mx-auto flex flex-col gap-7">
+          <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
+            Most businesses don&apos;t have a tool problem
+          </h2>
+          <p className="text-light-body text-[17px] leading-7 max-w-2xl">
+            Most businesses already have enough tools.
+          </p>
+          <p className="text-light-body text-[17px] leading-7 max-w-2xl">
+            What they&apos;re missing is clarity on how their work actually flows.
+          </p>
+          <p className="text-light-body text-[17px] leading-7 max-w-2xl">
+            Without that, automation just creates more complexity.
+          </p>
+          <p className="text-light-heading font-medium text-[17px] leading-7 max-w-2xl">
+            Once the workflow is clear, the right systems become obvious.
+          </p>
+        </div>
+      </section>
+
+      {/* Shadowing */}
+      <section className="py-24 px-6 md:px-16">
+        <div className="max-w-5xl mx-auto flex flex-col gap-7">
+          <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
+            I don&apos;t ask. I watch.
+          </h2>
+          <div className="flex flex-col gap-5 max-w-2xl text-light-body text-[17px] leading-7">
+            <p>Most people will ask how your business works.</p>
+            <p>You&apos;ll explain it.</p>
+            <p>And it will sound structured.</p>
+            <p className="text-light-heading font-medium">
+              But that&apos;s not how it actually runs.
             </p>
-          </blockquote>
-          <p className="text-light-body text-[17px] leading-7 max-w-2xl">
-            The real bottleneck is the amount of manual work required to keep
-            delivery, communication, and operations moving. That&apos;s what I
-            fix.
-          </p>
-          <p className="text-light-body text-[17px] leading-7 max-w-2xl">
-            In one day, I map your actual day-to-day operations and turn them
-            into a clear automation blueprint:
-          </p>
+            <p>So I don&apos;t start with questions.</p>
+            <p>I sit with you and your team.</p>
+            <p>I watch how work actually happens.</p>
+          </div>
           <div className="flex flex-col gap-2 max-w-2xl">
-            {[
-              "what should be automated",
-              "what should stay human",
-              "what to prioritize first",
-              "what tools to use",
-              "how everything should work together",
-            ].map((item) => (
+            <p className="text-[#555] text-base leading-relaxed">
+              What gets copied.
+            </p>
+            <p className="text-[#555] text-base leading-relaxed">
+              What gets repeated.
+            </p>
+            <p className="text-[#555] text-base leading-relaxed">
+              Where things break.
+            </p>
+            <p className="text-[#555] text-base leading-relaxed">
+              Where people get stuck.
+            </p>
+          </div>
+          <p className="text-light-heading font-medium text-[17px] leading-7 max-w-2xl">
+            That&apos;s where the real opportunities are.
+          </p>
+        </div>
+      </section>
+
+      {/* What I Look For */}
+      <section className="bg-light-alt py-24 px-6 md:px-16">
+        <div className="max-w-5xl mx-auto flex flex-col gap-7">
+          <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
+            What I&apos;m actually looking for
+          </h2>
+          <p className="text-light-body text-[17px] leading-7 max-w-2xl">
+            I&apos;m not looking for tools.
+          </p>
+          <p className="text-light-body text-[17px] leading-7 max-w-2xl">
+            I&apos;m looking for:
+          </p>
+          <div className="flex flex-col gap-2.5 max-w-2xl">
+            {lookingFor.map((item) => (
               <p key={item} className="text-[#555] text-base leading-relaxed">
                 — {item}
               </p>
             ))}
           </div>
           <p className="text-light-heading font-medium text-[17px] leading-7 max-w-2xl">
-            You walk away with clarity, structure, and a step-by-step plan to
-            remove yourself from the busywork.
-          </p>
-        </div>
-      </section>
-
-      {/* What It Is */}
-      <section className="bg-light-alt py-24 px-6 md:px-16">
-        <div className="max-w-5xl mx-auto flex flex-col gap-7">
-          <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
-            What is &ldquo;Your Business OS&rdquo;?
-          </h2>
-          <p className="text-light-body text-[17px] leading-7 max-w-2xl">
-            Your Business OS is a productized 1-day session where I map out the
-            most important parts of your business to automate.
-          </p>
-          <p className="text-light-body text-[17px] leading-7 max-w-2xl">
-            I look over your shoulder, study how your business actually runs, and
-            identify the highest-impact opportunities to save time and reduce
-            manual work.
-          </p>
-          <p className="text-light-heading font-semibold text-[17px] leading-7 max-w-2xl">
-            You walk away with a custom operating blueprint built around how your
-            business actually works. Specific to you. Ready to act on.
-          </p>
-        </div>
-      </section>
-
-      {/* What Happens */}
-      <section className="py-24 px-6 md:px-16">
-        <div className="max-w-5xl mx-auto flex flex-col gap-7">
-          <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
-            What happens in your 1-day Business OS session
-          </h2>
-          <p className="text-light-body text-[17px] leading-7 max-w-2xl">
-            During the session, I go through your real workflow with you. I look
-            at how work enters your business, how it gets delivered, where
-            communication breaks, where time gets wasted, and where manual
-            repetition is slowing you down.
-          </p>
-          <p className="text-light-body font-medium text-[17px] leading-7">
-            Together, I map:
-          </p>
-          <div className="flex flex-col gap-6 max-w-2xl">
-            {sessionSteps.map((step, i) => (
-              <div key={i} className="flex items-start gap-5">
-                <span className="flex items-center justify-center shrink-0 w-9 h-9 rounded-full bg-dark-accent text-dark-bg font-semibold text-sm">
-                  {i + 1}
-                </span>
-                <div>
-                  <p className="text-light-heading font-semibold text-[17px] leading-6">
-                    {step.title}
-                  </p>
-                  <p className="text-[#555] text-base leading-relaxed mt-1">
-                    {step.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Outcomes */}
-      <section className="bg-light-alt py-24 px-6 md:px-16">
-        <div className="max-w-5xl mx-auto flex flex-col gap-7">
-          <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
-            What you walk away with
-          </h2>
-          <div className="flex flex-col gap-3.5 max-w-2xl">
-            {outcomes.map((item) => (
-              <p key={item} className="text-light-body text-base leading-relaxed">
-                ✓ {item}
-              </p>
-            ))}
-          </div>
-          <p className="text-light-heading font-medium text-[17px] leading-7 max-w-2xl">
-            In plain English: you&apos;ll know exactly what to automate first to
-            get your time back fast.
+            Once you see those patterns, the system becomes obvious.
           </p>
         </div>
       </section>
@@ -341,6 +314,22 @@ export default function BusinessOSPage() {
           <p className="text-[#555] font-medium text-base">
             I focus on the tasks that eat your week alive.
           </p>
+        </div>
+      </section>
+
+      {/* Outcomes */}
+      <section className="bg-light-alt py-24 px-6 md:px-16">
+        <div className="max-w-5xl mx-auto flex flex-col gap-7">
+          <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
+            What you walk away with
+          </h2>
+          <div className="flex flex-col gap-3.5 max-w-2xl">
+            {outcomes.map((item) => (
+              <p key={item} className="text-light-body text-base leading-relaxed">
+                ✓ {item}
+              </p>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -395,7 +384,6 @@ export default function BusinessOSPage() {
             </p>
           </div>
 
-          {/* Pricing card */}
           <div className="w-full max-w-lg bg-white border border-[#E5E5E5] rounded-2xl p-12 flex flex-col gap-8">
             <div className="flex flex-col gap-2">
               <p className="tracking-[0.04em] uppercase text-light-accent font-semibold text-[15px]">
@@ -413,9 +401,6 @@ export default function BusinessOSPage() {
                 </p>
               ))}
             </div>
-            <p className="text-light-accent font-medium italic text-sm text-center">
-              If you free up 30–50% of your workload, this pays for itself fast.
-            </p>
             <div className="w-full h-px bg-[#E5E5E5]" />
             <div className="flex flex-col gap-2.5">
               <p className="text-light-heading font-medium text-[15px] leading-6">
@@ -438,11 +423,10 @@ export default function BusinessOSPage() {
             Zero-risk guarantee
           </h2>
           <p className="text-light-heading font-medium text-lg">
-            If this isn&apos;t valuable, you don&apos;t pay.
+            If this isn&apos;t valuable, I&apos;ll refund you.
           </p>
           <p className="text-[#555] text-base leading-relaxed">
-            You should leave with a clear, practical automation plan that saves
-            you real hours. If you don&apos;t, I refund you fully.
+            I&apos;d rather lose money than waste your time.
           </p>
         </div>
       </section>
@@ -451,17 +435,10 @@ export default function BusinessOSPage() {
       <section className="bg-light-alt py-24 px-6 md:px-16 text-center">
         <div className="max-w-3xl mx-auto flex flex-col gap-4">
           <h2 className="text-light-heading font-bold text-3xl tracking-tight">
-            Only 1 Business OS client per week
+            I only take 1 client per week
           </h2>
-          <p className="text-[#555] text-[17px] leading-7">
-            I only take 1 client per week. That&apos;s 4 per month.
-          </p>
-          <p className="text-[#555] text-[17px] leading-7">
-            This is a deliberately small scale. Every client gets my full focus
-            for an entire day. That&apos;s the only way this works.
-          </p>
           <p className="text-light-heading font-medium text-base mt-2">
-            Once a slot is booked, it&apos;s gone.
+            Once it&apos;s booked, it&apos;s gone.
           </p>
         </div>
       </section>
@@ -479,14 +456,9 @@ export default function BusinessOSPage() {
       {/* Final CTA */}
       <section className="bg-[#111] py-24 px-6 md:px-16 text-center">
         <div className="max-w-3xl mx-auto flex flex-col items-center gap-7">
-          <h2 className="text-dark-heading font-bold text-3xl md:text-[40px] leading-tight tracking-tight">
-            Get your Business OS
+          <h2 className="text-dark-heading font-bold text-3xl md:text-[40px] leading-tight tracking-tight max-w-xl">
+            If your business still depends on you, this is the fastest way to fix it.
           </h2>
-          <p className="text-[#888] text-[17px] leading-7 max-w-xl">
-            If your business is doing €5k–€20k/month and you&apos;re buried in
-            manual work, this is the fastest way to see exactly what to automate
-            first.
-          </p>
           <CTAButton />
         </div>
       </section>
