@@ -15,11 +15,25 @@ export function WhatIDo() {
             more follow-ups — all done by hand, every single time.
           </p>
           <p>
-            I step in, map your day-to-day operations, and build an automation
-            blueprint that shows you exactly what to automate first. Using Claude
+            I step in, map your day-to-day operations, and actually build the
+            automations — from simple workflows to complex systems. Using Claude
             AI and tools like Make, Slack, and Google Ads Scripts, I create
-            systems that handle the repetitive work — so you can focus on
+            systems that handle the repetitive work so you can focus on
             strategy, clients, and growth.
+          </p>
+          <p>
+            For larger builds, I work together with my software company{" "}
+            <a
+              href="https://stickytooling.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-dark-accent hover:opacity-80 transition-opacity"
+            >
+              StickyTooling
+            </a>
+            {" "}— where we develop custom tools, integrations, and full
+            automation platforms for businesses that need more than off-the-shelf
+            solutions.
           </p>
           <p className="text-dark-heading font-medium">
             The result: 30–50% less manual work. More time. Less chaos.
