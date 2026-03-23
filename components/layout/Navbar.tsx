@@ -61,13 +61,28 @@ export function Navbar() {
           {/* Language toggle */}
           <button
             onClick={() => setLocale(locale === "en" ? "nl" : "en")}
-            className={`text-xs font-semibold px-3 py-1.5 rounded-full border transition-colors ${
-              isLight
-                ? "border-gray-300 text-light-body hover:text-light-heading"
-                : "border-dark-border text-dark-body hover:text-dark-heading"
-            }`}
+            className="text-sm px-3 py-1.5 rounded-full border border-transparent hover:border-dark-border transition-colors"
+            title={locale === "en" ? "Switch to Dutch" : "Switch to English"}
           >
-            {locale === "en" ? "NL" : "EN"}
+            {locale === "en" ? (
+              <svg viewBox="0 0 36 24" className="w-6 h-4 rounded-sm overflow-hidden">
+                <rect width="36" height="8" fill="#AE1C28"/>
+                <rect y="8" width="36" height="8" fill="#FFF"/>
+                <rect y="16" width="36" height="8" fill="#21468B"/>
+              </svg>
+            ) : (
+              <svg viewBox="0 0 60 30" className="w-6 h-4 rounded-sm overflow-hidden">
+                <clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
+                <clipPath id="t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath>
+                <g clipPath="url(#s)">
+                  <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+                  <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6"/>
+                  <path d="M0,0 L60,30 M60,0 L0,30" clipPath="url(#t)" stroke="#C8102E" strokeWidth="4"/>
+                  <path d="M30,0 v30 M0,15 h60" stroke="#fff" strokeWidth="10"/>
+                  <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" strokeWidth="6"/>
+                </g>
+              </svg>
+            )}
           </button>
 
           <Link
@@ -129,11 +144,21 @@ export function Navbar() {
             ))}
             <button
               onClick={() => setLocale(locale === "en" ? "nl" : "en")}
-              className={`text-sm text-left ${
+              className={`text-sm text-left flex items-center gap-2 ${
                 isLight ? "text-light-body" : "text-dark-body"
               }`}
             >
-              {locale === "en" ? "🇳🇱 Nederlands" : "🇬🇧 English"}
+              {locale === "en" ? (
+                <>
+                  <svg viewBox="0 0 36 24" className="w-5 h-3.5 rounded-sm"><rect width="36" height="8" fill="#AE1C28"/><rect y="8" width="36" height="8" fill="#FFF"/><rect y="16" width="36" height="8" fill="#21468B"/></svg>
+                  Nederlands
+                </>
+              ) : (
+                <>
+                  <svg viewBox="0 0 60 30" className="w-5 h-3.5 rounded-sm"><clipPath id="ms"><path d="M0,0 v30 h60 v-30 z"/></clipPath><clipPath id="mt"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath><g clipPath="url(#ms)"><path d="M0,0 v30 h60 v-30 z" fill="#012169"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6"/><path d="M0,0 L60,30 M60,0 L0,30" clipPath="url(#mt)" stroke="#C8102E" strokeWidth="4"/><path d="M30,0 v30 M0,15 h60" stroke="#fff" strokeWidth="10"/><path d="M30,0 v30 M0,15 h60" stroke="#C8102E" strokeWidth="6"/></g></svg>
+                  English
+                </>
+              )}
             </button>
             <Link
               href="/book-a-call"
