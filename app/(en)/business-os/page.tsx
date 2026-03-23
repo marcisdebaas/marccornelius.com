@@ -50,6 +50,12 @@ const automationTags = [
   "Dashboard summaries",
   "Internal handoffs",
   "Marketing materials",
+  "Follow-up sequences",
+  "Meeting scheduling",
+  "CRM updates",
+  "File organization",
+  "Approval workflows",
+  "Team notifications",
 ];
 
 const outcomes = [
@@ -415,20 +421,30 @@ export default function BusinessOSPage() {
 
       {/* What Changes */}
       <section className="py-24 px-6 md:px-16">
-        <div className="max-w-5xl mx-auto flex flex-col gap-7">
-          <h2 className="font-heading text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
-            What actually changes
-          </h2>
-          <div className="flex flex-col gap-5 max-w-2xl text-light-body text-[17px] leading-7">
-            <p>Work doesn&apos;t stop when you&apos;re not involved.</p>
-            <p>Tasks don&apos;t need your approval every time.</p>
-            <p>Decisions don&apos;t flow back to you.</p>
-            <p className="text-light-heading font-medium">Repetitive work disappears.</p>
-            <p className="text-light-heading font-medium">The team moves faster.</p>
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
+          <div className="flex-1 flex flex-col gap-7">
+            <h2 className="font-heading text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
+              What actually changes
+            </h2>
+            <div className="flex flex-col gap-5 text-light-body text-[17px] leading-7">
+              <p>Work doesn&apos;t stop when you&apos;re not involved.</p>
+              <p>Tasks don&apos;t need your approval every time.</p>
+              <p>Decisions don&apos;t flow back to you.</p>
+              <p className="text-light-heading font-medium">Repetitive work disappears.</p>
+              <p className="text-light-heading font-medium">The team moves faster.</p>
+            </div>
+            <p className="text-light-heading font-semibold text-[17px] leading-7">
+              And the business keeps running, <span className="accent-underline-light">without you in the middle</span>.
+            </p>
           </div>
-          <p className="text-light-heading font-semibold text-[17px] leading-7 max-w-2xl">
-            And the business keeps running, <span className="accent-underline-light">without you in the middle</span>.
-          </p>
+          <div className="w-full md:w-72 h-80 md:h-96 shrink-0 rounded-2xl overflow-hidden relative self-start">
+            <Image
+              src="/images/_MG_9621.jpg"
+              alt="Marc Cornelius"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
 
