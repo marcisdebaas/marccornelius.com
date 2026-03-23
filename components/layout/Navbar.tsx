@@ -24,12 +24,10 @@ export function Navbar() {
 
   function switchLocale() {
     if (locale === "en") {
-      // Add /nl prefix
-      router.push(`/nl${pathname}`);
+      router.push(`/nl${pathname}`, { scroll: false });
     } else {
-      // Remove /nl prefix
       const newPath = pathname.replace(/^\/nl/, "") || "/";
-      router.push(newPath);
+      router.push(newPath, { scroll: false });
     }
   }
 
