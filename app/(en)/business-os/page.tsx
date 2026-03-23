@@ -97,7 +97,7 @@ function CTAButton() {
   return (
     <div className="flex flex-col items-center gap-3">
       <Link
-        href="/book-a-call"
+        href="/business-os/intake"
         className="inline-flex items-center justify-center rounded-[10px] py-4.5 px-10 bg-dark-accent text-dark-bg font-body font-semibold text-base transition-opacity hover:opacity-90"
       >
         Book Your Business OS
