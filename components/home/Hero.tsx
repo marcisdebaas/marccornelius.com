@@ -40,10 +40,10 @@ export function Hero() {
             Let&apos;s automate together
           </Link>
           <Link
-            href="#how-it-works"
+            href="/about"
             className="inline-flex items-center justify-center rounded-full py-3.5 px-8 border border-dark-heading text-dark-heading font-medium text-base transition-colors hover:bg-dark-heading/10"
           >
-            See how it works
+            Read more about me
           </Link>
         </div>
       </div>
