@@ -322,28 +322,79 @@ export default function BusinessOSPage() {
         </div>
       </section>
 
-      {/* What I Look For — [CHANGED] sharpened ending */}
+      {/* What I Look For */}
       <section className="bg-light-alt py-24 px-6 md:px-16">
-        <div className="max-w-5xl mx-auto flex flex-col gap-7">
-          <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
-            What I&apos;m actually looking for
-          </h2>
-          <p className="text-light-body text-[17px] leading-7 max-w-2xl">
-            I&apos;m not looking for tools.
-          </p>
-          <p className="text-light-body text-[17px] leading-7 max-w-2xl">
-            I&apos;m looking for:
-          </p>
-          <div className="flex flex-col gap-2.5 max-w-2xl">
-            {lookingFor.map((item) => (
-              <p key={item} className="text-[#555] text-base leading-relaxed">
-                — {item}
-              </p>
-            ))}
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
+          <div className="flex-1 flex flex-col gap-7">
+            <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight max-w-2xl">
+              What I&apos;m actually looking for
+            </h2>
+            <p className="text-light-body text-[17px] leading-7 max-w-2xl">
+              I&apos;m not looking for tools.
+            </p>
+            <p className="text-light-body text-[17px] leading-7 max-w-2xl">
+              I&apos;m looking for:
+            </p>
+            <div className="flex flex-col gap-2.5 max-w-2xl">
+              {lookingFor.map((item) => (
+                <p key={item} className="text-[#555] text-base leading-relaxed">
+                  — {item}
+                </p>
+              ))}
+            </div>
+            <p className="text-light-heading font-medium text-[17px] leading-7 max-w-2xl">
+              Once you see these patterns, the system becomes <span className="accent-underline-light">obvious</span>.
+            </p>
           </div>
-          <p className="text-light-heading font-medium text-[17px] leading-7 max-w-2xl">
-            Once you see these patterns, the system becomes <span className="accent-underline-light">obvious</span>.
-          </p>
+
+          {/* Bottleneck pattern diagram */}
+          <div className="w-full md:w-[340px] shrink-0 self-center">
+            <svg viewBox="0 0 340 380" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-full h-auto">
+              {/* Center node — YOU */}
+              <circle cx="170" cy="190" r="36" fill="#1B5E3B" />
+              <text x="170" y="195" textAnchor="middle" fill="white" fontSize="13" fontWeight="600">YOU</text>
+
+              {/* Surrounding nodes */}
+              {/* Top: Manual data */}
+              <circle cx="170" cy="60" r="28" fill="white" stroke="#E5E5E5" strokeWidth="1.5" />
+              <text x="170" y="55" textAnchor="middle" fill="#555" fontSize="9" fontWeight="500">Manual</text>
+              <text x="170" y="68" textAnchor="middle" fill="#555" fontSize="9" fontWeight="500">data</text>
+              <line x1="170" y1="88" x2="170" y2="154" stroke="#1B5E3B" strokeWidth="1.5" strokeDasharray="4 3" />
+
+              {/* Top-right: Decisions */}
+              <circle cx="280" cy="110" r="28" fill="white" stroke="#E5E5E5" strokeWidth="1.5" />
+              <text x="280" y="105" textAnchor="middle" fill="#555" fontSize="9" fontWeight="500">Decisions</text>
+              <text x="280" y="118" textAnchor="middle" fill="#555" fontSize="9" fontWeight="500">depend on you</text>
+              <line x1="257" y1="130" x2="200" y2="175" stroke="#1B5E3B" strokeWidth="1.5" strokeDasharray="4 3" />
+
+              {/* Bottom-right: Waiting */}
+              <circle cx="280" cy="270" r="28" fill="white" stroke="#E5E5E5" strokeWidth="1.5" />
+              <text x="280" y="265" textAnchor="middle" fill="#555" fontSize="9" fontWeight="500">People</text>
+              <text x="280" y="278" textAnchor="middle" fill="#555" fontSize="9" fontWeight="500">wait for input</text>
+              <line x1="257" y1="250" x2="200" y2="205" stroke="#1B5E3B" strokeWidth="1.5" strokeDasharray="4 3" />
+
+              {/* Bottom: Duplicated */}
+              <circle cx="170" cy="320" r="28" fill="white" stroke="#E5E5E5" strokeWidth="1.5" />
+              <text x="170" y="315" textAnchor="middle" fill="#555" fontSize="9" fontWeight="500">Work gets</text>
+              <text x="170" y="328" textAnchor="middle" fill="#555" fontSize="9" fontWeight="500">duplicated</text>
+              <line x1="170" y1="292" x2="170" y2="226" stroke="#1B5E3B" strokeWidth="1.5" strokeDasharray="4 3" />
+
+              {/* Bottom-left: Memory */}
+              <circle cx="60" cy="270" r="28" fill="white" stroke="#E5E5E5" strokeWidth="1.5" />
+              <text x="60" y="265" textAnchor="middle" fill="#555" fontSize="9" fontWeight="500">Runs on</text>
+              <text x="60" y="278" textAnchor="middle" fill="#555" fontSize="9" fontWeight="500">memory</text>
+              <line x1="83" y1="250" x2="140" y2="205" stroke="#1B5E3B" strokeWidth="1.5" strokeDasharray="4 3" />
+
+              {/* Top-left: empty for balance — shows "bottleneck" label */}
+              <circle cx="60" cy="110" r="28" fill="white" stroke="#E5E5E5" strokeWidth="1.5" />
+              <text x="60" y="105" textAnchor="middle" fill="#555" fontSize="9" fontWeight="500">Tasks need</text>
+              <text x="60" y="118" textAnchor="middle" fill="#555" fontSize="9" fontWeight="500">your approval</text>
+              <line x1="83" y1="130" x2="140" y2="175" stroke="#1B5E3B" strokeWidth="1.5" strokeDasharray="4 3" />
+
+              {/* Label */}
+              <text x="170" y="375" textAnchor="middle" fill="#999" fontSize="11" fontWeight="500" fontStyle="italic">Everything flows through one person.</text>
+            </svg>
+          </div>
         </div>
       </section>
 
