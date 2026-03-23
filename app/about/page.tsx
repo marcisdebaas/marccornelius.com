@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import { NewsletterForm } from "@/components/ui/NewsletterForm";
+import { LatestArticles } from "@/components/home/LatestArticles";
 
 export const metadata: Metadata = {
   title: "About",
@@ -132,6 +133,8 @@ export default function AboutPage() {
           </div>
         ))}
       </section>
+
+      <LatestArticles />
 
       {/* Newsletter CTA */}
       <section className="max-w-6xl mx-auto px-6 py-20 text-center">
