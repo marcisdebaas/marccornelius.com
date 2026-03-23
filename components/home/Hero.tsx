@@ -32,6 +32,17 @@ export function Hero() {
               Read more about me
             </Link>
           </div>
+
+          {/* Client logos */}
+          <div className="mt-10 opacity-40">
+            <Image
+              src="/images/client-logos.svg"
+              alt="Trusted by leading companies"
+              width={366}
+              height={33}
+              className="w-auto h-6"
+            />
+          </div>
         </div>
 
         {/* Right column: image */}
