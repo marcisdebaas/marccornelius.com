@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { dmSerif, dmSans, inter } from "@/lib/fonts";
+import { Navbar } from "@/components/layout/Navbar";
+import { Footer } from "@/components/layout/Footer";
+import { I18nProvider } from "@/lib/i18n";
 import "./globals.css";
 
 const GTM_ID = "GTM-TQ8L547";

@@ -6,7 +6,7 @@ import { useI18n } from "@/lib/i18n";
 
 export function Services() {
   const { locale, t } = useI18n();
-  const lp = `/${locale}`;
+  const lp = locale === "nl" ? "/nl" : "";
 
   const services = [
     {

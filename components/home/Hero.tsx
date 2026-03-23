@@ -6,7 +6,7 @@ import { useI18n } from "@/lib/i18n";
 
 export function Hero() {
   const { locale, t } = useI18n();
-  const lp = `/${locale}`;
+  const lp = locale === "nl" ? "/nl" : "";
 
   return (
     <section className="bg-[#1A1A1A]">

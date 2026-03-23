@@ -6,7 +6,7 @@ import { useI18n } from "@/lib/i18n";
 
 export function AboutMe() {
   const { locale, t } = useI18n();
-  const lp = `/${locale}`;
+  const lp = locale === "nl" ? "/nl" : "";
 
   return (
     <section className="max-w-6xl mx-auto px-12 py-20">

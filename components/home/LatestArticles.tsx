@@ -14,7 +14,7 @@ interface Post {
 
 export function LatestArticles({ posts }: { posts: Post[] }) {
   const { locale, t } = useI18n();
-  const lp = `/${locale}`;
+  const lp = locale === "nl" ? "/nl" : "";
 
   return (
     <section className="max-w-6xl mx-auto px-12 py-20">

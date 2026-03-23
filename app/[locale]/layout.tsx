@@ -3,10 +3,8 @@ import { Footer } from "@/components/layout/Footer";
 import { I18nProvider } from "@/lib/i18n";
 import { notFound } from "next/navigation";
 
-const locales = ["en", "nl"];
-
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return [{ locale: "nl" }];
 }
 
 export default async function LocaleLayout({
@@ -18,12 +16,12 @@ export default async function LocaleLayout({
 }) {
   const { locale } = await params;
 
-  if (!locales.includes(locale)) {
+  if (locale !== "nl") {
     notFound();
   }
 
   return (
-    <I18nProvider initialLocale={locale as "en" | "nl"}>
+    <I18nProvider initialLocale="nl">
       <Navbar />
       <main className="flex-1">{children}</main>
       <Footer />

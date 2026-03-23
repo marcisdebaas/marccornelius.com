@@ -13,8 +13,8 @@ export function Navbar() {
   const { locale, t } = useI18n();
   const isLight = pathname.includes("/business-os");
 
-  // Build locale-prefixed hrefs
-  const lp = `/${locale}`;
+  // English = no prefix, Dutch = /nl prefix
+  const lp = locale === "nl" ? "/nl" : "";
 
   const navLinks = [
     { href: `${lp}/about`, label: t("nav.about") },
@@ -23,10 +23,14 @@ export function Navbar() {
   ];
 
   function switchLocale() {
-    const newLocale = locale === "en" ? "nl" : "en";
-    // Replace /en/ or /nl/ prefix with new locale
-    const newPath = pathname.replace(/^\/(en|nl)/, `/${newLocale}`);
-    router.push(newPath);
+    if (locale === "en") {
+      // Add /nl prefix
+      router.push(`/nl${pathname}`);
+    } else {
+      // Remove /nl prefix
+      const newPath = pathname.replace(/^\/nl/, "") || "/";
+      router.push(newPath);
+    }
   }
 
   return (
@@ -39,7 +43,7 @@ export function Navbar() {
     >
       <div className="max-w-6xl mx-auto px-6 flex items-center justify-between h-16">
         {/* Logo */}
-        <Link href={lp} className="flex items-center">
+        <Link href={lp || "/"} className="flex items-center">
           <Image
             src="/images/logo.png"
             alt="Marc Cornelius"
