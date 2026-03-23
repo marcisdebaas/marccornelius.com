@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { NewsletterForm } from "@/components/ui/NewsletterForm";
 import { LatestArticles } from "@/components/home/LatestArticles";
+import { getAllPosts } from "@/lib/blog";
 
 export const metadata: Metadata = {
   title: "About",
@@ -134,7 +135,7 @@ export default function AboutPage() {
         ))}
       </section>
 
-      <LatestArticles />
+      <LatestArticles posts={getAllPosts().slice(0, 3)} />
 
       {/* Newsletter CTA */}
       <section className="max-w-6xl mx-auto px-6 py-20 text-center">

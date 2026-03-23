@@ -1,28 +1,24 @@
+"use client";
+
+import { useI18n } from "@/lib/i18n";
+
 export function WhatIDo() {
+  const { t } = useI18n();
+
   return (
     <section className="border-t border-dark-border">
       <div className="max-w-6xl mx-auto px-12 py-20">
         <p className="tracking-[0.12em] uppercase text-dark-accent font-medium text-[13px] mb-4">
-          What I do
+          {t("whatido.subtitle")}
         </p>
         <h2 className="font-heading text-dark-heading text-3xl md:text-[2.5rem] leading-tight mb-8">
-          I help business owners stop doing work a machine should do
+          {t("whatido.title")}
         </h2>
         <div className="flex flex-col gap-6 text-dark-body text-lg leading-8">
+          <p>{t("whatido.p1")}</p>
+          <p>{t("whatido.p2a")}</p>
           <p>
-            Most service businesses are stuck in a loop: more clients means more
-            manual work. More onboarding emails, more reports, more invoices,
-            more follow-ups — all done by hand, every single time.
-          </p>
-          <p>
-            I step in, map your day-to-day operations, and actually build the
-            automations — from simple workflows to complex systems. Using Claude
-            AI and tools like Make, Slack, and Google Ads Scripts, I create
-            systems that handle the repetitive work so you can focus on
-            strategy, clients, and growth.
-          </p>
-          <p>
-            For larger builds, I work together with my software company{" "}
+            {t("whatido.p3a")}{" "}
             <a
               href="https://stickytooling.com"
               target="_blank"
@@ -30,13 +26,11 @@ export function WhatIDo() {
               className="text-dark-accent hover:opacity-80 transition-opacity"
             >
               StickyTooling
-            </a>
-            {" "}— where we develop custom tools, integrations, and full
-            automation platforms for businesses that need more than off-the-shelf
-            solutions.
+            </a>{" "}
+            {t("whatido.p3b")}
           </p>
           <p className="text-dark-heading font-medium">
-            The result: 30–50% less manual work. More time. Less chaos.
+            {t("whatido.result")}
           </p>
         </div>
       </div>

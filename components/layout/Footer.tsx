@@ -2,10 +2,12 @@
 
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import { useI18n } from "@/lib/i18n";
 
 export function Footer() {
   const pathname = usePathname();
   const isLight = pathname === "/business-os";
+  const { t } = useI18n();
 
   return (
     <footer
@@ -29,7 +31,7 @@ export function Footer() {
             isLight ? "text-light-body" : "text-dark-body"
           }`}
         >
-          &copy; 2025 Marc Cornelius. All rights reserved.
+          {t("footer.copyright")}
         </p>
 
         <div className="flex items-center gap-5">

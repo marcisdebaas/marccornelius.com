@@ -1,17 +1,27 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
-import { getAllPosts } from "@/lib/blog";
+import { useI18n } from "@/lib/i18n";
 
-export function LatestArticles() {
-  const posts = getAllPosts().slice(0, 3);
+interface Post {
+  slug: string;
+  title: string;
+  date: string;
+  excerpt: string;
+  image?: string;
+}
+
+export function LatestArticles({ posts }: { posts: Post[] }) {
+  const { t } = useI18n();
 
   return (
     <section className="max-w-6xl mx-auto px-12 py-20">
       <p className="tracking-[0.12em] uppercase text-dark-accent font-medium text-[13px] text-center">
-        From the blog
+        {t("articles.subtitle")}
       </p>
       <h2 className="font-heading text-dark-heading text-3xl md:text-[2.5rem] leading-tight text-center mt-4 mb-14">
-        Latest articles
+        {t("articles.title")}
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
@@ -40,7 +50,7 @@ export function LatestArticles() {
                 {post.excerpt}
               </p>
               <p className="text-dark-accent font-semibold text-sm mt-auto">
-                Read &rarr;
+                {t("articles.read")} &rarr;
               </p>
             </div>
           </Link>

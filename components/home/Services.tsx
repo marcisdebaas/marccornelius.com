@@ -1,24 +1,29 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
-
-const services = [
-  {
-    title: "AI OS Setup",
-    desc: "A full AI operating system built around your company. I work with you 1-on-1 to integrate Claude into every layer of your business.",
-    link: "/business-os",
-    linkText: "Learn more",
-    image: "/images/_MG_9599.jpg",
-  },
-  {
-    title: "Custom Automations",
-    desc: "From content pipelines to reporting workflows — I build automations that save your team hours every single week.",
-    link: "/book-a-call",
-    linkText: "Get your automations",
-    image: "/images/_MG_0073.jpg",
-  },
-];
+import { useI18n } from "@/lib/i18n";
 
 export function Services() {
+  const { t } = useI18n();
+
+  const services = [
+    {
+      title: t("services.aios.title"),
+      desc: t("services.aios.desc"),
+      link: "/business-os",
+      linkText: t("services.aios.link"),
+      image: "/images/_MG_9599.jpg",
+    },
+    {
+      title: t("services.automations.title"),
+      desc: t("services.automations.desc"),
+      link: "/book-a-call",
+      linkText: t("services.automations.link"),
+      image: "/images/_MG_0073.jpg",
+    },
+  ];
+
   return (
     <section className="max-w-6xl mx-auto px-12 pt-10 pb-20">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5">

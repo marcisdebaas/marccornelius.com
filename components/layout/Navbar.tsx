@@ -4,17 +4,19 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-
-const navLinks = [
-  { href: "/about", label: "About" },
-  { href: "/business-os", label: "AI OS Setup" },
-  { href: "/resources", label: "Resources" },
-];
+import { useI18n } from "@/lib/i18n";
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const pathname = usePathname();
   const isLight = pathname === "/business-os";
+  const { locale, setLocale, t } = useI18n();
+
+  const navLinks = [
+    { href: "/about", label: t("nav.about") },
+    { href: "/business-os", label: t("nav.aiOsSetup") },
+    { href: "/resources", label: t("nav.resources") },
+  ];
 
   return (
     <nav
@@ -55,6 +57,19 @@ export function Navbar() {
               {link.label}
             </Link>
           ))}
+
+          {/* Language toggle */}
+          <button
+            onClick={() => setLocale(locale === "en" ? "nl" : "en")}
+            className={`text-xs font-semibold px-3 py-1.5 rounded-full border transition-colors ${
+              isLight
+                ? "border-gray-300 text-light-body hover:text-light-heading"
+                : "border-dark-border text-dark-body hover:text-dark-heading"
+            }`}
+          >
+            {locale === "en" ? "NL" : "EN"}
+          </button>
+
           <Link
             href="/book-a-call"
             className={`text-sm px-5 py-2 rounded-full border transition-colors ${
@@ -63,7 +78,7 @@ export function Navbar() {
                 : "border-dark-accent text-dark-accent hover:bg-dark-accent hover:text-dark-bg"
             }`}
           >
-            Book a Call
+            {t("nav.bookACall")}
           </Link>
         </div>
 
@@ -112,6 +127,14 @@ export function Navbar() {
                 {link.label}
               </Link>
             ))}
+            <button
+              onClick={() => setLocale(locale === "en" ? "nl" : "en")}
+              className={`text-sm text-left ${
+                isLight ? "text-light-body" : "text-dark-body"
+              }`}
+            >
+              {locale === "en" ? "🇳🇱 Nederlands" : "🇬🇧 English"}
+            </button>
             <Link
               href="/book-a-call"
               onClick={() => setMobileOpen(false)}
@@ -121,7 +144,7 @@ export function Navbar() {
                   : "border-dark-accent text-dark-accent"
               }`}
             >
-              Book a Call
+              {t("nav.bookACall")}
             </Link>
           </div>
         </div>
