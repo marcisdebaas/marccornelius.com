@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { getAllPosts } from "@/lib/blog";
 
 export function LatestArticles() {
@@ -18,18 +19,30 @@ export function LatestArticles() {
           <Link
             key={post.slug}
             href={`/blog/${post.slug}`}
-            className="bg-dark-card border border-dark-border rounded-xl p-7 flex flex-col gap-3 group hover:border-dark-accent/30 transition-colors"
+            className="bg-dark-card border border-dark-border rounded-xl overflow-hidden flex flex-col group hover:border-dark-accent/30 transition-colors"
           >
-            <p className="text-[#666] text-sm">{post.date}</p>
-            <h3 className="font-heading text-dark-heading text-lg leading-snug group-hover:text-dark-accent transition-colors">
-              {post.title}
-            </h3>
-            <p className="text-dark-body text-sm leading-relaxed line-clamp-2">
-              {post.excerpt}
-            </p>
-            <p className="text-dark-accent font-semibold text-sm mt-auto">
-              Read &rarr;
-            </p>
+            {post.image && (
+              <div className="relative w-full h-40">
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+            )}
+            <div className="p-7 flex flex-col gap-3 flex-1">
+              <p className="text-[#666] text-sm">{post.date}</p>
+              <h3 className="font-heading text-dark-heading text-lg leading-snug group-hover:text-dark-accent transition-colors">
+                {post.title}
+              </h3>
+              <p className="text-dark-body text-sm leading-relaxed line-clamp-2">
+                {post.excerpt}
+              </p>
+              <p className="text-dark-accent font-semibold text-sm mt-auto">
+                Read &rarr;
+              </p>
+            </div>
           </Link>
         ))}
       </div>
