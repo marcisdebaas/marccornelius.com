@@ -137,7 +137,7 @@ export default function BusinessOSPage() {
 
           <div className="w-64 h-64 md:w-[400px] md:h-[400px] shrink-0 rounded-2xl overflow-hidden relative self-start">
             <Image
-              src="/images/_MG_0044.jpg"
+              src="/images/_MG_0087.jpg"
               alt="Marc Cornelius"
               fill
               className="object-cover"
