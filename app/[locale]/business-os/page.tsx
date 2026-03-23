@@ -219,6 +219,30 @@ export default function BusinessOSPage() {
         </div>
       </section>
 
+      {/* Video placeholder */}
+      <section className="py-20 px-6 md:px-16">
+        <div className="max-w-4xl mx-auto">
+          <div className="relative w-full aspect-video rounded-2xl overflow-hidden bg-[#1A1A1A] border border-[#E5E5E5] flex items-center justify-center group cursor-pointer">
+            <Image
+              src="/images/_MG_0073.jpg"
+              alt="Watch the video"
+              fill
+              className="object-cover opacity-40"
+            />
+            <div className="relative z-10 flex flex-col items-center gap-4">
+              <div className="w-20 h-20 rounded-full bg-dark-accent/90 flex items-center justify-center group-hover:bg-dark-accent transition-colors">
+                <svg viewBox="0 0 24 24" className="w-8 h-8 ml-1" fill="#141414">
+                  <polygon points="5,3 19,12 5,21" />
+                </svg>
+              </div>
+              <p className="text-white font-medium text-sm tracking-wide">
+                Watch how it works
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* POV */}
       <section className="bg-light-alt py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col gap-7">
@@ -242,7 +266,17 @@ export default function BusinessOSPage() {
 
       {/* Shadowing — dark section for drama */}
       <section className="py-28 px-6 md:px-16 bg-[#141414]">
-        <div className="max-w-5xl mx-auto flex flex-col gap-8">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
+          {/* Photo */}
+          <div className="w-full md:w-64 h-80 shrink-0 rounded-2xl overflow-hidden relative md:sticky md:top-24">
+            <Image
+              src="/images/_MG_9649.jpg"
+              alt="Marc observing workflows"
+              fill
+              className="object-cover"
+            />
+          </div>
+          <div className="flex-1 flex flex-col gap-8">
           <h2 className="text-dark-heading font-bold text-3xl md:text-[40px] leading-tight tracking-tight max-w-2xl">
             I don&apos;t ask. I watch.
           </h2>
@@ -283,6 +317,7 @@ export default function BusinessOSPage() {
               <br />
               They show up in how work actually happens.
             </p>
+          </div>
           </div>
         </div>
       </section>
@@ -371,9 +406,10 @@ export default function BusinessOSPage() {
         </div>
       </section>
 
-      {/* Why Worth It — [CHANGED] ROI hook at top */}
+      {/* Why Worth It */}
       <section className="py-24 px-6 md:px-16">
-        <div className="max-w-5xl mx-auto flex flex-col gap-7">
+        <div className="max-w-5xl mx-auto flex flex-col md:flex-row gap-12">
+          <div className="flex-1 flex flex-col gap-7">
           <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
             Why this is worth it
           </h2>
@@ -413,10 +449,20 @@ export default function BusinessOSPage() {
             You&apos;re redesigning how your business operates. That&apos;s the
             real shift.
           </p>
+          </div>
+          {/* Photo */}
+          <div className="hidden md:block w-64 h-80 shrink-0 rounded-2xl overflow-hidden relative self-start sticky top-24">
+            <Image
+              src="/images/_MG_9599.jpg"
+              alt="Marc Cornelius"
+              fill
+              className="object-cover"
+            />
+          </div>
         </div>
       </section>
 
-      {/* Investment — [CHANGED] clarity line added */}
+      {/* Investment */}
       <section className="bg-light-alt py-24 px-6 md:px-16">
         <div className="max-w-5xl mx-auto flex flex-col items-center gap-10">
           <h2 className="text-light-heading font-bold text-3xl md:text-4xl leading-tight tracking-tight">
