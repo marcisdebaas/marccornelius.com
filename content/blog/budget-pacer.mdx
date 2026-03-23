@@ -1,29 +1,25 @@
 ---
 title: "Budget Pacer"
 date: "January 6, 2025"
-excerpt: "Overspending on ads because you forgot to check the budget? A simple budget pacer script keeps your campaigns on track without daily babysitting."
-category: "Automation"
-readTime: "4 min read"
+excerpt: "A Google Ads script that monitors accounts for potential overspending and sends daily budget overviews. Stop checking budgets each morning."
+category: "PPC"
+readTime: "3 min read"
+image: "/images/blog/budget-pacer.png"
 ---
 
-Overspending on ads because you forgot to check the budget? A simple budget pacer script keeps your campaigns on track without daily babysitting.
+Feeling like you're constantly glued to your Google Ads campaigns? Managing strict budgets is stressful. Overspending even slightly? Not an option. But who has the time to monitor campaigns 24/7?
 
-## The problem with daily budgets
+Here's a solution to help you stay in control without having to check your budgets each morning.
 
-Google Ads lets you set daily budgets, but it also reserves the right to overspend by up to 2x on any given day. Over a month it's supposed to even out, but in practice, spend can spike unpredictably — especially on high-volume campaigns. If you're managing budgets across multiple accounts, keeping track of monthly pacing manually is a headache.
+## What this script does
 
-## What a budget pacer does
+This Google Ads script:
+- Monitors accounts for potential overspending (MCC-level)
+- Provides a daily overview of budget spendings
+- Sends you email updates every day
 
-A budget pacer checks your actual spend against where you should be at this point in the month. If it's the 15th and you've already spent 70% of your monthly budget, something needs to adjust. The script calculates the ideal daily spend for the remaining days and either alerts you or adjusts budgets automatically to stay on track.
+It's like having an extra set of eyes on your campaigns while you focus on other priorities. And the best part? You don't have to choose between control and balance.
 
-## How I built mine
+## Get started
 
-The logic is straightforward. Pull month-to-date spend from the Google Ads API. Compare it to the monthly target. Calculate the remaining daily budget needed. If the variance is above a threshold, send a Slack notification with the recommended adjustment. The whole thing runs as a scheduled script every morning before campaigns ramp up for the day.
-
-## Why this beats manual checking
-
-Humans forget. Especially on Fridays, holidays, and during busy weeks. A budget pacer doesn't forget. It runs every single day and catches pacing issues before they become overspend problems. Over a year, this has saved my clients thousands of euros in wasted spend simply by keeping things steady.
-
-## Start simple
-
-You don't need a fancy tool for this. A Google Sheets script connected to your ads data can work as a first version. The important thing is that something checks your pacing every day — whether that's a script, a tool, or a calendar reminder. Automation just makes it reliable.
+Take back your time. Stay in control.

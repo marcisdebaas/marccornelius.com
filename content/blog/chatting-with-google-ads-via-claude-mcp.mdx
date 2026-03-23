@@ -1,29 +1,43 @@
 ---
 title: "Chatting with Google Ads via Claude MCP"
 date: "April 21, 2025"
-excerpt: "What happens when you connect Google Ads to Claude using MCP? You get a conversational interface to your ad data — and it's surprisingly useful."
+excerpt: "I managed to get my Claude desktop app connected to Google Ads via MCP. Here's how you can set this up for yourself."
 category: "Automation"
-readTime: "6 min read"
+readTime: "8 min read"
+image: "/images/blog/claude-mcp-google-ads.jpg"
 ---
 
-What happens when you connect Google Ads to Claude using MCP? You get a conversational interface to your ad data — and it's surprisingly useful.
+I'm so hyped. Managed to get my Claude desktop app connected to Google Ads. How? Via MCP. This whole article is dedicated to how you can set this up for yourself.
 
-## What is MCP?
+## Step 1: Get Google Ads API Access (5 minutes)
 
-Model Context Protocol is a way to give AI models like Claude access to external tools and data sources. Instead of copying data into a chat window, the model can query your systems directly. In this case, I connected Claude to the Google Ads API via an MCP server, which means I can ask questions about my campaigns and get real answers from real data.
+Go to Google Cloud Console, create a new project, search for "Google Ads API" and enable it. Go to "Credentials" → "Create Credentials" → "OAuth Client ID", select "Desktop Application", download the client_secret.json file.
 
-## What this looks like in practice
+## Step 2: Get Google Ads Developer Token (1-3 business days)
 
-Instead of opening the Google Ads interface, navigating to the right campaign, setting the date range, and reading through columns of numbers, I type something like "How did my search campaigns perform last week compared to the week before?" Claude queries the API, pulls the data, and gives me a summary. Impressions, clicks, cost, conversions — with context about what changed and why it might matter.
+Sign in to Google Ads, click the wrench icon (Tools & Settings). Under "Setup" click "API Center", accept the Terms of Service, click "Apply for token", fill out the form, submit and wait for approval.
 
-## Where it gets interesting
+## Step 3: Install Required Software (5 minutes)
 
-The real value isn't just pulling numbers. It's asking follow-up questions. "Which ad groups had the highest CPA?" "Are there any keywords spending more than 50 euros with zero conversions?" "Show me the trend for my brand campaigns over the last 30 days." Each of these would take several clicks in the Google Ads UI. Here, it's a sentence.
+Install Python (3.11+, check "Add Python to PATH"), Node.js from nodejs.org, and Claude Desktop from anthropic.com.
 
-## The limitations
+## Step 4: Download the Google Ads Tool (2 minutes)
 
-This isn't a replacement for the full Google Ads interface. You're not going to build campaigns or adjust bids through a chat window — at least not yet. It's a reporting and analysis layer. Think of it as a faster way to get answers from your data without context-switching out of your workflow.
+Go to the mcp-google-ads GitHub repository, click "Code" → "Download ZIP", unzip to a convenient location.
 
-## Why this matters for business owners
+## Step 5: Set Up the Tool
 
-Most business owners don't check their ad performance as often as they should because the tools are complex and time-consuming to navigate. A conversational interface lowers that barrier dramatically. You're more likely to stay on top of your numbers when checking them takes ten seconds instead of ten minutes.
+Navigate to the folder in Terminal, create a virtual environment, activate it, and install requirements with `pip install -r requirements.txt`.
+
+## Step 6: Connecting Claude to Google Ads (5 minutes)
+
+Edit Claude's config JSON, paste the configuration, replace paths to Python, google_ads_server.py, credentials file, developer token, and manager account ID. Save and reboot Claude Desktop.
+
+## Try it out
+
+Try prompts like:
+- "Can you run a YoY analysis of my Search campaigns"
+- "Which Ads have the highest CTR?"
+- "Show me my Google Ads accounts"
+
+What used to take me 2 hours each morning now takes 5 minutes. I ask Claude to summarize performance, flag anomalies, and suggest optimizations. It's like having a senior analyst on call 24/7.

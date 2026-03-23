@@ -126,39 +126,37 @@ export default function BusinessOSPage() {
     <div className="bg-white text-light-body font-inter">
       {/* Hero */}
       <section className="bg-[#F0F0EE]">
-        <div className="max-w-6xl mx-auto px-12 pt-16 pb-20">
-          {/* Top: heading + image */}
-          <div className="flex flex-col md:flex-row items-center gap-12 mb-4">
-            <div className="flex-1 flex flex-col gap-2">
-              <p className="tracking-[0.12em] uppercase text-light-accent font-medium text-[13px] leading-4">
-                AI OS Setup
-              </p>
-              <h1 className="font-inter text-light-heading font-bold text-4xl md:text-[48px] md:leading-[56px] tracking-tight">
-                Cut 30–50% of Your Workload in 1 Day
-              </h1>
+        <div className="max-w-6xl mx-auto px-12 pt-16 pb-20 flex flex-col md:flex-row gap-12">
+          {/* Left column: heading + body */}
+          <div className="flex-1 flex flex-col gap-2">
+            <p className="tracking-[0.12em] uppercase text-light-accent font-medium text-[13px] leading-4">
+              AI OS Setup
+            </p>
+            <h1 className="font-inter text-light-heading font-bold text-4xl md:text-[48px] md:leading-[56px] tracking-tight mb-6">
+              Cut 30–50% of Your Workload in 1 Day
+            </h1>
+            <p className="max-w-[520px] text-light-body font-inter text-[17px] leading-7 mb-8">
+              I map out exactly what to automate in your business, so you stop
+              drowning in client work and finally get your time back.
+            </p>
+            <div className="flex flex-wrap items-center gap-4">
+              <CTAButton />
             </div>
-            <div className="w-64 h-64 md:w-[400px] md:h-[400px] shrink-0 rounded-2xl overflow-hidden relative">
-              <Image
-                src="/images/_MG_9611.jpg"
-                alt="Marc Cornelius"
-                fill
-                className="object-cover"
-              />
-            </div>
+            <p className="text-[#777] font-inter text-sm leading-relaxed max-w-md mt-3">
+              For service businesses doing €5k–€20k/month that are stuck in
+              client work and want more time, more structure, and less chaos.
+            </p>
           </div>
 
-          {/* Body */}
-          <p className="max-w-[520px] text-light-body font-inter text-[17px] leading-7 mb-8">
-            I map out exactly what to automate in your business, so you stop
-            drowning in client work and finally get your time back.
-          </p>
-          <div className="flex flex-wrap items-center gap-4">
-            <CTAButton />
+          {/* Right column: image */}
+          <div className="w-64 h-64 md:w-[400px] md:h-[400px] shrink-0 rounded-2xl overflow-hidden relative self-start">
+            <Image
+              src="/images/_MG_9611.jpg"
+              alt="Marc Cornelius"
+              fill
+              className="object-cover"
+            />
           </div>
-          <p className="text-[#777] font-inter text-sm leading-relaxed max-w-md mt-3">
-            For service businesses doing €5k–€20k/month that are stuck in
-            client work and want more time, more structure, and less chaos.
-          </p>
         </div>
       </section>
 
