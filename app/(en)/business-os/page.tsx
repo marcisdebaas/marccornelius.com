@@ -146,22 +146,18 @@ export default function BusinessOSPage() {
         </div>
       </section>
 
-      {/* [CHANGED] Strong line after hero */}
-      <section className="py-12 px-6 md:px-16 border-b border-[#E8E8E8]">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-light-heading font-semibold text-xl md:text-2xl leading-relaxed max-w-2xl">
+      {/* Strong line + Signature — dark cinematic block */}
+      <section className="py-20 px-6 md:px-16 bg-[#141414]">
+        <div className="max-w-5xl mx-auto mb-16">
+          <p className="text-dark-body font-medium text-xl md:text-2xl leading-relaxed max-w-2xl">
             Your team doesn&apos;t need more tools.
             <br />
             They need a system they can run without you.
           </p>
         </div>
-      </section>
-
-      {/* [CHANGED] Signature line — larger, more space, divider */}
-      <section className="py-20 px-6 md:px-16">
         <div className="max-w-5xl mx-auto">
-          <blockquote className="border-l-4 border-light-accent pl-8">
-            <p className="text-light-heading font-bold text-3xl md:text-[36px] leading-snug tracking-tight italic">
+          <blockquote className="border-l-4 border-dark-accent pl-8">
+            <p className="text-dark-heading font-bold text-3xl md:text-[36px] leading-snug tracking-tight italic">
               &ldquo;If everything depends on you, you don&apos;t have a system.&rdquo;
             </p>
           </blockquote>
@@ -244,54 +240,50 @@ export default function BusinessOSPage() {
         </div>
       </section>
 
-      {/* Shadowing — [CHANGED] larger text, more spacing, stronger ending */}
-      <section className="py-28 px-6 md:px-16 bg-[#FAFAF8]">
+      {/* Shadowing — dark section for drama */}
+      <section className="py-28 px-6 md:px-16 bg-[#141414]">
         <div className="max-w-5xl mx-auto flex flex-col gap-8">
-          <h2 className="text-light-heading font-bold text-3xl md:text-[40px] leading-tight tracking-tight max-w-2xl">
+          <h2 className="text-dark-heading font-bold text-3xl md:text-[40px] leading-tight tracking-tight max-w-2xl">
             I don&apos;t ask. I watch.
           </h2>
-          <div className="flex flex-col gap-6 max-w-2xl text-light-body text-lg leading-8">
+          <div className="flex flex-col gap-6 max-w-2xl text-dark-body text-lg leading-8">
             <p>Most people will ask how your business works.</p>
             <p>You&apos;ll explain it.</p>
             <p>And it will sound structured.</p>
-            <p className="text-light-heading font-semibold text-lg">
+            <p className="text-dark-heading font-semibold text-lg">
               But that&apos;s not how it actually runs.
             </p>
             <p>So I don&apos;t start with questions.</p>
             <p>I sit with you and your team.</p>
-            <p className="text-light-heading font-medium text-lg">
+            <p className="text-dark-heading font-medium text-lg">
               I watch how work actually happens.
             </p>
           </div>
           <div className="flex flex-col gap-3 max-w-2xl mt-2">
-            <p className="text-[#444] text-base leading-relaxed">
+            <p className="text-[#777] text-base leading-relaxed">
               What gets copied.
             </p>
-            <p className="text-[#444] text-base leading-relaxed">
+            <p className="text-[#777] text-base leading-relaxed">
               What gets repeated.
             </p>
-            <p className="text-[#444] text-base leading-relaxed">
+            <p className="text-[#777] text-base leading-relaxed">
               Where things break.
             </p>
-            <p className="text-[#444] text-base leading-relaxed">
+            <p className="text-[#777] text-base leading-relaxed">
               Where people get stuck.
             </p>
           </div>
-          {/* [CHANGED] Stronger closing */}
-          <p className="text-light-heading font-semibold text-lg leading-7 max-w-2xl mt-2">
+          <p className="text-dark-accent font-semibold text-lg leading-7 max-w-2xl mt-2">
             That&apos;s where the real leverage is.
           </p>
-        </div>
-      </section>
-
-      {/* [NEW] Micro-insight */}
-      <section className="py-16 px-6 md:px-16">
-        <div className="max-w-5xl mx-auto">
-          <p className="text-light-heading font-medium text-xl md:text-2xl leading-relaxed max-w-2xl">
-            Most problems don&apos;t show up in reports.
-            <br />
-            They show up in how work actually happens.
-          </p>
+          {/* Micro-insight */}
+          <div className="border-t border-dark-border mt-6 pt-8 max-w-2xl">
+            <p className="text-dark-heading font-medium text-xl md:text-2xl leading-relaxed">
+              Most problems don&apos;t show up in reports.
+              <br />
+              They show up in how work actually happens.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -469,16 +461,16 @@ export default function BusinessOSPage() {
         </div>
       </section>
 
-      {/* Guarantee — [CHANGED] higher contrast bg */}
-      <section className="py-24 px-6 md:px-16 text-center bg-[#FAFAF8]">
+      {/* Guarantee — dark for weight */}
+      <section className="py-24 px-6 md:px-16 text-center bg-[#141414]">
         <div className="max-w-3xl mx-auto flex flex-col gap-4">
-          <h2 className="text-light-heading font-bold text-3xl tracking-tight">
+          <h2 className="text-dark-heading font-bold text-3xl tracking-tight">
             Zero-risk guarantee
           </h2>
-          <p className="text-light-heading font-semibold text-xl">
+          <p className="text-dark-heading font-semibold text-xl">
             If this isn&apos;t valuable, I&apos;ll refund you.
           </p>
-          <p className="text-[#555] text-base leading-relaxed">
+          <p className="text-dark-body text-base leading-relaxed">
             I&apos;d rather lose money than waste your time.
           </p>
         </div>
