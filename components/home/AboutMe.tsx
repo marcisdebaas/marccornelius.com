@@ -5,8 +5,7 @@ import Link from "next/link";
 import { useI18n } from "@/lib/i18n";
 
 export function AboutMe() {
-  const { locale, t } = useI18n();
-  const lp = locale === "nl" ? "/nl" : "";
+  const { t } = useI18n();
 
   return (
     <section className="max-w-6xl mx-auto px-12 py-20">
@@ -34,7 +33,7 @@ export function AboutMe() {
             {t("aboutme.p2")}
           </p>
           <Link
-            href={`${lp}/about`}
+            href="/about"
             className="text-dark-heading font-semibold text-base hover:text-dark-accent transition-colors"
           >
             {t("aboutme.link")}
