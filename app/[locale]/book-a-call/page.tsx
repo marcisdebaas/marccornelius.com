@@ -55,7 +55,7 @@ export default function BookACallPage() {
 
       {/* Calendly embed */}
       <section className="max-w-4xl mx-auto px-6 pb-16">
-        <CalendlyEmbed url="https://calendly.com/marccornelius/discovery-call" />
+        <CalendlyEmbed url="https://calendly.com/marccornelius" />
       </section>
 
       {/* What to expect */}

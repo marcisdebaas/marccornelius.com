@@ -29,7 +29,7 @@ export default function BusinessOSIntakePage() {
 
       {/* Calendly */}
       <section className="max-w-4xl mx-auto px-6 py-16">
-        <CalendlyEmbed url="https://calendly.com/marccornelius/business-os-intake" />
+        <CalendlyEmbed url="https://calendly.com/marccornelius" />
       </section>
 
       {/* What to expect */}
