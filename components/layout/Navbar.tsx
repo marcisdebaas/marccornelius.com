@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname, useRouter } from "next/navigation";
@@ -8,10 +8,22 @@ import { useI18n } from "@/lib/i18n";
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [langOpen, setLangOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
   const { locale, t } = useI18n();
+  const langRef = useRef<HTMLDivElement>(null);
   const isLight = pathname.includes("/business-os");
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setLangOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   // English = no prefix, Dutch = /nl prefix
   const lp = locale === "nl" ? "/nl" : "";
@@ -72,32 +84,96 @@ export function Navbar() {
             </Link>
           ))}
 
-          {/* Language toggle */}
-          <button
-            onClick={switchLocale}
-            className="text-sm px-3 py-1.5 rounded-full border border-transparent hover:border-dark-border transition-colors"
-            title={locale === "en" ? "Switch to Dutch" : "Switch to English"}
-          >
-            {locale === "en" ? (
-              <svg viewBox="0 0 36 24" className="w-6 h-4 rounded-sm overflow-hidden">
-                <rect width="36" height="8" fill="#AE1C28"/>
-                <rect y="8" width="36" height="8" fill="#FFF"/>
-                <rect y="16" width="36" height="8" fill="#21468B"/>
+          {/* Language dropdown */}
+          <div className="relative" ref={langRef}>
+            <button
+              onClick={() => setLangOpen(!langOpen)}
+              className={`flex items-center gap-1.5 text-sm px-3 py-1.5 rounded-full border transition-colors ${
+                langOpen
+                  ? isLight ? "border-gray-300" : "border-dark-border"
+                  : "border-transparent hover:border-dark-border"
+              }`}
+            >
+              {locale === "en" ? (
+                <>
+                  <svg viewBox="0 0 60 30" className="w-5 h-3.5 rounded-sm overflow-hidden">
+                    <clipPath id="ds"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
+                    <clipPath id="dt"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath>
+                    <g clipPath="url(#ds)">
+                      <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+                      <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6"/>
+                      <path d="M0,0 L60,30 M60,0 L0,30" clipPath="url(#dt)" stroke="#C8102E" strokeWidth="4"/>
+                      <path d="M30,0 v30 M0,15 h60" stroke="#fff" strokeWidth="10"/>
+                      <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" strokeWidth="6"/>
+                    </g>
+                  </svg>
+                  <span className={isLight ? "text-light-body" : "text-dark-body"}>EN</span>
+                </>
+              ) : (
+                <>
+                  <svg viewBox="0 0 36 24" className="w-5 h-3.5 rounded-sm overflow-hidden">
+                    <rect width="36" height="8" fill="#AE1C28"/>
+                    <rect y="8" width="36" height="8" fill="#FFF"/>
+                    <rect y="16" width="36" height="8" fill="#21468B"/>
+                  </svg>
+                  <span className={isLight ? "text-light-body" : "text-dark-body"}>NL</span>
+                </>
+              )}
+              <svg width="10" height="6" viewBox="0 0 10 6" className={`transition-transform ${langOpen ? "rotate-180" : ""}`}>
+                <path d="M1 1l4 4 4-4" stroke={isLight ? "#555" : "#999"} strokeWidth="1.5" fill="none" strokeLinecap="round"/>
               </svg>
-            ) : (
-              <svg viewBox="0 0 60 30" className="w-6 h-4 rounded-sm overflow-hidden">
-                <clipPath id="s"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
-                <clipPath id="t"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath>
-                <g clipPath="url(#s)">
-                  <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
-                  <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6"/>
-                  <path d="M0,0 L60,30 M60,0 L0,30" clipPath="url(#t)" stroke="#C8102E" strokeWidth="4"/>
-                  <path d="M30,0 v30 M0,15 h60" stroke="#fff" strokeWidth="10"/>
-                  <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" strokeWidth="6"/>
-                </g>
-              </svg>
+            </button>
+            {langOpen && (
+              <div className={`absolute right-0 mt-2 w-36 rounded-lg border shadow-lg overflow-hidden ${
+                isLight
+                  ? "bg-white border-gray-200"
+                  : "bg-dark-card border-dark-border"
+              }`}>
+                <button
+                  onClick={() => {
+                    if (locale !== "en") switchLocale();
+                    setLangOpen(false);
+                  }}
+                  className={`w-full flex items-center gap-2.5 px-3.5 py-2.5 text-sm transition-colors ${
+                    locale === "en"
+                      ? isLight ? "bg-gray-50 text-light-heading" : "bg-white/5 text-dark-heading"
+                      : isLight ? "text-light-body hover:bg-gray-50" : "text-dark-body hover:bg-white/5"
+                  }`}
+                >
+                  <svg viewBox="0 0 60 30" className="w-5 h-3.5 rounded-sm shrink-0">
+                    <clipPath id="dds"><path d="M0,0 v30 h60 v-30 z"/></clipPath>
+                    <clipPath id="ddt"><path d="M30,15 h30 v15 z v15 h-30 z h-30 v-15 z v-15 h30 z"/></clipPath>
+                    <g clipPath="url(#dds)">
+                      <path d="M0,0 v30 h60 v-30 z" fill="#012169"/>
+                      <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" strokeWidth="6"/>
+                      <path d="M0,0 L60,30 M60,0 L0,30" clipPath="url(#ddt)" stroke="#C8102E" strokeWidth="4"/>
+                      <path d="M30,0 v30 M0,15 h60" stroke="#fff" strokeWidth="10"/>
+                      <path d="M30,0 v30 M0,15 h60" stroke="#C8102E" strokeWidth="6"/>
+                    </g>
+                  </svg>
+                  English
+                </button>
+                <button
+                  onClick={() => {
+                    if (locale !== "nl") switchLocale();
+                    setLangOpen(false);
+                  }}
+                  className={`w-full flex items-center gap-2.5 px-3.5 py-2.5 text-sm transition-colors ${
+                    locale === "nl"
+                      ? isLight ? "bg-gray-50 text-light-heading" : "bg-white/5 text-dark-heading"
+                      : isLight ? "text-light-body hover:bg-gray-50" : "text-dark-body hover:bg-white/5"
+                  }`}
+                >
+                  <svg viewBox="0 0 36 24" className="w-5 h-3.5 rounded-sm shrink-0">
+                    <rect width="36" height="8" fill="#AE1C28"/>
+                    <rect y="8" width="36" height="8" fill="#FFF"/>
+                    <rect y="16" width="36" height="8" fill="#21468B"/>
+                  </svg>
+                  Nederlands
+                </button>
+              </div>
             )}
-          </button>
+          </div>
 
           <Link
             href={`${lp}/book-a-call`}
