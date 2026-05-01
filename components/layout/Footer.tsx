@@ -36,7 +36,7 @@ export function Footer() {
 
         <div className="flex items-center gap-5">
           <a
-            href="https://linkedin.com/in/marccornelius"
+            href="https://www.linkedin.com/in/marc-cornelius/"
             target="_blank"
             rel="noopener noreferrer"
             className={`text-sm transition-colors ${
