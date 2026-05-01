@@ -598,7 +598,7 @@ export default function BusinessOSPage() {
                   Your Business OS
                 </p>
                 <p className="text-dark-heading font-bold text-5xl md:text-6xl tracking-tight">
-                  €2.250
+                  €1.350
                 </p>
                 <p className="text-[#666] text-[15px]">One-time investment</p>
               </div>
