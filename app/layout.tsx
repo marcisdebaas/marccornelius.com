@@ -3,6 +3,7 @@ import { dmSerif, dmSans, inter } from "@/lib/fonts";
 import "./globals.css";
 
 const GTM_ID = "GTM-TQ8L547";
+const GA_ID = "G-V0RM4VQCHC";
 
 export const metadata: Metadata = {
   title: {
@@ -30,6 +31,16 @@ export default function RootLayout({
       className={`${dmSerif.variable} ${dmSans.variable} ${inter.variable} antialiased`}
     >
       <head>
+        {/* Google Analytics (gtag.js) */}
+        <script async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`} />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_ID}');`,
+          }}
+        />
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{
