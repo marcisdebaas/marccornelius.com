@@ -48,18 +48,6 @@ export function Footer() {
             LinkedIn
           </a>
           <a
-            href="https://twitter.com/marccornelius"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={`text-sm transition-colors ${
-              isLight
-                ? "text-light-body hover:text-light-heading"
-                : "text-dark-body hover:text-dark-heading"
-            }`}
-          >
-            Twitter
-          </a>
-          <a
             href="mailto:marc@marccornelius.com"
             className={`text-sm transition-colors ${
               isLight

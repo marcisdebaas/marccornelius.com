@@ -51,8 +51,8 @@ export function Hero() {
         {/* Right column: image */}
         <div className="w-64 h-64 md:w-[400px] md:h-[400px] shrink-0 rounded-2xl overflow-hidden relative self-start">
           <Image
-            src="/images/ruby-simon.jpg"
-            alt="Ruby Simon"
+            src="/images/_MG_9611.jpg"
+            alt="Marc Cornelius"
             fill
             className="object-cover object-center"
             preload
