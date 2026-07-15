@@ -48,7 +48,7 @@ export function Footer() {
             LinkedIn
           </a>
           <a
-            href="mailto:marc@marccornelius.com"
+            href="mailto:info@marc.nl"
             className={`text-sm transition-colors ${
               isLight
                 ? "text-light-body hover:text-light-heading"
