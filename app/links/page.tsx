@@ -42,7 +42,7 @@ const links: LinkItem[] = [
   },
   {
     label: "StickyTooling.com",
-    sublabel: "My software company",
+    sublabel: "My AI transformation company",
     href: "https://stickytooling.com",
     external: true,
     icon: (
