@@ -187,14 +187,14 @@ const categories: { label: string; title: string; tools: Tool[] }[] = [
       {
         name: "Angular",
         icon: <AngularIcon />,
-        desc: "Our frontend framework of choice at Sticky Tooling. Robust, scalable, and perfect for building complex web applications that need to last.",
+        desc: "Our frontend framework of choice at Empathree.ai. Robust, scalable, and perfect for building complex web applications that need to last.",
         link: "angular.dev",
         url: "https://angular.dev",
       },
       {
         name: "Laravel",
         icon: <LaravelIcon />,
-        desc: "The backend framework that powers Sticky Tooling's custom software. Elegant, powerful, and battle-tested for building APIs and full-stack applications.",
+        desc: "The backend framework that powers Empathree.ai's custom software. Elegant, powerful, and battle-tested for building APIs and full-stack applications.",
         link: "laravel.com",
         url: "https://laravel.com",
       },
@@ -222,7 +222,7 @@ const categories: { label: string; title: string; tools: Tool[] }[] = [
       {
         name: "SLA Generator",
         icon: <FileTextIcon />,
-        desc: "Creates professional Service Level Agreements for StickyTooling clients. Fills in all the legal and technical details from a simple brief.",
+        desc: "Creates professional Service Level Agreements for Empathree.ai clients. Fills in all the legal and technical details from a simple brief.",
       },
       {
         name: "Business Context Gatherer",

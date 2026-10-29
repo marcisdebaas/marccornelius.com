@@ -5,11 +5,11 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Marc Cornelius — Links",
   description:
-    "Everything in one place: my website, StickyTooling, Business OS, workshops, custom software and LinkedIn.",
+    "Everything in one place: my website, Empathree.ai, Business OS, workshops, custom software, TOADS and LinkedIn.",
   openGraph: {
     title: "Marc Cornelius — Links",
     description:
-      "Everything in one place: my website, StickyTooling, Business OS, workshops, custom software and LinkedIn.",
+      "Everything in one place: my website, Empathree.ai, Business OS, workshops, custom software, TOADS and LinkedIn.",
     images: ["/images/_MG_9611.jpg"],
   },
 };
@@ -41,9 +41,9 @@ const links: LinkItem[] = [
     ),
   },
   {
-    label: "StickyTooling.com",
+    label: "Empathree.ai",
     sublabel: "My AI transformation company",
-    href: "https://stickytooling.com",
+    href: "https://www.empathree.ai",
     external: true,
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -67,7 +67,7 @@ const links: LinkItem[] = [
   {
     label: "Workshops",
     sublabel: "Hands-on sessions for your team",
-    href: "https://stickytooling.com",
+    href: "https://www.empathree.ai/ai-workshops",
     external: true,
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
@@ -79,12 +79,26 @@ const links: LinkItem[] = [
   },
   {
     label: "Custom software",
-    sublabel: "Have your software built by StickyTooling",
-    href: "https://stickytooling.com",
+    sublabel: "Have your software built by Empathree.ai",
+    href: "https://www.empathree.ai/software",
     external: true,
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
         <path d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+      </svg>
+    ),
+  },
+  {
+    label: "TOADS",
+    sublabel: "Online marketing for the automotive sector",
+    href: "https://toads.nl",
+    external: true,
+    icon: (
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M5 17H3v-5l2-5h11l3 5h2v5h-2" />
+        <circle cx="7.5" cy="17" r="2" />
+        <circle cx="16.5" cy="17" r="2" />
+        <path d="M9.5 17h5M3 12h18" />
       </svg>
     ),
   },
@@ -169,10 +183,10 @@ export default function LinksPage() {
 
         {/* Footer */}
         <a
-          href="mailto:info@marc.nl"
+          href="mailto:marc@empathree.ai"
           className="text-dark-body hover:text-dark-heading text-sm mt-10 transition-colors"
         >
-          info@marc.nl
+          marc@empathree.ai
         </a>
       </div>
     </main>

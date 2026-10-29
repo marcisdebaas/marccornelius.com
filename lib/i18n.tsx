@@ -43,7 +43,7 @@ const translations: Record<string, string> = {
   // About Me
   "aboutme.subtitle": "I'm Marc",
   "aboutme.title": "Pleasure to meet you",
-  "aboutme.p1": "I run an automation consultancy and co-own StickyTooling, a software company that builds custom tools for businesses. I've helped teams across agencies, service businesses, and SaaS companies streamline their operations.",
+  "aboutme.p1": "I run an automation consultancy and co-own Empathree.ai, a software company that builds custom tools for businesses. I've helped teams across agencies, service businesses, and SaaS companies streamline their operations.",
   "aboutme.p2": "I believe most businesses don't need more people \u2014 they need better systems. I find the manual work your team shouldn't be doing, and I replace it with something that just works.",
   "aboutme.link": "Discover more about my journey",
 

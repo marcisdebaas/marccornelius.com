@@ -20,12 +20,12 @@ export function WhatIDo() {
           <p>
             {t("whatido.p3a")}{" "}
             <a
-              href="https://stickytooling.com"
+              href="https://empathree.ai"
               target="_blank"
               rel="noopener noreferrer"
               className="text-dark-accent hover:opacity-80 transition-opacity"
             >
-              StickyTooling
+              Empathree.ai
             </a>{" "}
             {t("whatido.p3b")}
           </p>

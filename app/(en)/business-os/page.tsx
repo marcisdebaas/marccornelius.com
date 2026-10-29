@@ -77,7 +77,7 @@ const faqItems = [
   {
     question: "Is this implementation or strategy?",
     answer:
-      "This is the strategy and blueprint phase. I map exactly what should be automated and how. If you want, StickyTooling can implement it afterward.",
+      "This is the strategy and blueprint phase. I map exactly what should be automated and how. If you want, Empathree.ai can implement it afterward.",
   },
   {
     question: "Do I need technical knowledge?",
@@ -626,7 +626,7 @@ export default function BusinessOSPage() {
                   <span className="text-dark-accent text-sm mt-0.5">+</span>
                   <p className="text-dark-heading font-medium text-[15px] leading-6">
                     50% credited toward implementation if you continue with
-                    StickyTooling.
+                    Empathree.ai.
                   </p>
                 </div>
                 <div className="flex items-start gap-3">
